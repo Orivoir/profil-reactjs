@@ -6,6 +6,7 @@
 
 .dragger {
 
+    z-index: 99999999;
     position: absolute;
     margin: 0;
     padding: 0;
