@@ -1,17 +1,21 @@
 import React from 'react';
+import { Theme } from './../Theme' ;
+import './ButtonTheme.css' ;
 
 export default class ButtonTheme extends React.Component {
-    
+
+    static contextType = Theme ;
+
     render() {
 
-        const { content , toggleTheme } = this.props ;
+        const { content } = this.props ;
 
         return(
-            <>
-                <button onClick={toggleTheme}>
+            <section className={this.context.theme}>
+                <button onClick={this.context.toggleTheme}>
                     {content}
                 </button>
-            </>
+            </section>
         ) ;
     }
 };

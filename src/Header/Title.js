@@ -17,12 +17,12 @@ export const Title = ({text , bq , logo,toggleTheme}) => (
                 height="75"
             />
 
-
         </Link>
 
         <h1> { text || 'Lorem Ipsum' } </h1>
         <blockquote> { bq || 'Culpa in quis ullamco ...' } </blockquote>
-        
+
+        {/* component toggle provider theme button  */}
         <ButtonTheme content="thémes" onClick={toggleTheme} />
 
     </section>

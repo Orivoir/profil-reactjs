@@ -9,15 +9,32 @@ import { routes } from './routes' ;
 export default class App extends React.Component {
   
   state = {
-    theme: themes.light
+    theme: themes.light ,
   } ;
+
+  constructor( props ) {
+
+    super( props ) ;
+
+    // Define state function change the current theme
+    this.state.toggleTheme = () => {
+      
+      this.setState( state => ( {
+
+        theme:
+          ( state.theme === themes.light ) ? themes.dark :
+          ( state.theme === themes.dark ) ? themes.alt : themes.light
+      
+        } ) ) ;
+
+    }
+
+  }
 
   render() {
 
-    const {theme} = this.state ;
-
     return (
-      <Theme.Provider value={theme} >
+      <Theme.Provider value={this.state} >
           <Switch>
             
             {/* Dynamic define routes */}
