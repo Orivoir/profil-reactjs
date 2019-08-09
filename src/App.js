@@ -9,7 +9,7 @@ import { routes } from './routes' ;
 export default class App extends React.Component {
   
   state = {
-    theme: themes.light ,
+    theme: themes.dark ,
   } ;
 
   constructor( props ) {

@@ -25,15 +25,14 @@
     color: #ecf0f1;
 }
 
-.light #navbar ul {
-
-}
-
 .dark #navbar {
-
+    
+    background: #bdc3c7;
 }
-.dark #navbar ul {
 
+.dark #navbar ul li a {
+    
+    color: #2c3e50;
 }
 
 .alternate #navbar {

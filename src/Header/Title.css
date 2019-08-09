@@ -75,6 +75,36 @@
     background:  rgb( 35,35,35 ) ;
 }
 
+.dark #wrap-title {
+
+    
+    background: rgb(35,35,35) ;
+}
+
+.dark #wrap-title h1 {
+
+    
+    color: #dfe6e9 ;
+}
+
+.dark blockquote {
+
+    color: #27ae60 ;
+}
+
+.dark #wrap-title h1::before {
+    
+    background: #f39c12 ;
+    
+    top: 100%;
+}
+
+.dark #wrap-title blockquote::before {
+    
+    background:  #dfe6e9 ;
+    top: 0;
+}
+
 /**
 * responsive style
 */
