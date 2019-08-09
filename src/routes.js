@@ -5,7 +5,7 @@ import Future from './Future/Future';
 export const routes = [
 
     { path: "/" , name: "accueil" , render: Home , exact: true },
-    { path: "/course" , name: "cours" , render: Course , exact: false },
+    { path: "/course" , name: "flux actif" , render: Course , exact: false },
     { path: "/future" , name: "avenir" , render: Future , exact: false }
 
 ] ;
