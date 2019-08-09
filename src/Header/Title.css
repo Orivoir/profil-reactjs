@@ -1,0 +1,47 @@
+#wrap-title {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3.5vh 0;
+}
+
+#wrap-title h1 ,
+#wrap-title blockquote {
+
+    margin:0;
+    font-size: 2rem;
+}
+
+#wrap-title blockquote {
+
+    font-size: 1.15rem;
+}
+
+@media screen and (max-width: 685px) {
+
+    #wrap-title {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    #wrap-title img {
+
+        width: 55px;
+        height: 55px;
+    }
+
+    #wrap-title h1 {
+        
+        font-size: 1.7rem ;
+    }
+    
+    #wrap-title blockquote {
+
+        font-size: .9rem;
+    }
+
+}

@@ -11,7 +11,7 @@ export default class ButtonTheme extends React.Component {
         const { content } = this.props ;
 
         return(
-            <section className={this.context.theme}>
+            <section className={`wrap-btn-theme ${this.context.theme}`}>
                 <button onClick={this.context.toggleTheme}>
                     {content}
                 </button>

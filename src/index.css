@@ -13,3 +13,15 @@ code {
 a , img , button {
   display: inline-block ;
 }
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}

@@ -2,6 +2,8 @@ import React from 'react' ;
 import { Link } from 'react-router-dom' ;
 import ButtonTheme from './ButtonTheme';
 
+import './Title.css' ;
+
 export const Title = ({text , bq , logo,toggleTheme}) => (
     
     <section id="wrap-title">

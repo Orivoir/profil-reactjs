@@ -1,0 +1,26 @@
+#navbar {
+    padding: 1.85vh 0;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/**
+* responsive style
+*/
+@media screen and (max-width: 450px) {
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    #navbar ul li {
+
+        margin: .85vh 0;
+    }
+}

@@ -1,0 +1,32 @@
+/**
+* global style
+*/
+.wrap-btn-theme {
+
+    margin: .6vh 1.2vh;
+}
+
+.wrap-btn-theme button {
+
+    text-transform: uppercase;
+    font-weight: 650;
+    padding: .8vh 1.6vh;
+    background: transparent;
+    border: none;
+    color: #000;
+}
+
+/**
+* theme style
+*/
+.wrap-btn-theme.light button {
+    
+}
+
+.wrap-btn-theme.dark button {
+
+}
+
+.wrap-btn-theme.alternate button {
+
+}

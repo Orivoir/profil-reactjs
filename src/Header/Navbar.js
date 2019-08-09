@@ -4,7 +4,7 @@ import { routes } from './../routes' ;
 import './Navbar.css' ;
 
 export const Navbar = () => (
-    <nav>
+    <nav id="navbar">
         <ul>
             { routes.map( (route,key) => (
                 <li key={key}>
