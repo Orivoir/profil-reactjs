@@ -5,6 +5,7 @@ import {Title} from './Title';
 import {Navbar} from './Navbar';
 
 import logo from './logo.png' ;
+import logoDark from './logoDark.svg' ;
 import './Header.css' ;
 
 export default class Header extends React.Component {
@@ -23,7 +24,7 @@ export default class Header extends React.Component {
                     toggleTheme={ toggleTheme }
                     text="Samuel Gaborieau"
                     bq="profil &amp; parcours du web"
-                    logo={logo}
+                    logo={(this.context.theme === "light" ? logo : logoDark )}
                 />
 
                 <Navbar activeLink={activeLink} />
