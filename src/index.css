@@ -10,6 +10,6 @@ code {
     monospace;
 }
 
-a , img {
+a , img , button {
   display: inline-block ;
 }

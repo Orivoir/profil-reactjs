@@ -13,11 +13,14 @@ export default class Header extends React.Component {
 
     render() {
 
+        const { toggleTheme } = this.props ;
+
         return (
             
             <header className={ this.context } >
 
                 <Title
+                    toggleTheme={ toggleTheme }
                     text="Samuel Gaborieau"
                     bq="profil &amp; parcours du web"
                     logo={logo}
