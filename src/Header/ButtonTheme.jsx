@@ -1,9 +1,24 @@
 import React from 'react';
 import { Theme } from './../Theme' ;
+import pencolorImg from './pencolor.png' ;
+import Dragger from './../Dragger/Dragger' ;
 import './ButtonTheme.css' ;
-import pencolorImg from './pencolor.png' ; 
 
-// const list = ['light' , 'dark' , 'alternate' ] ;
+
+const list = [
+    {
+        value:'light',
+        name: 'clair'
+    },
+    {
+        value:'dark',
+        name: 'sombre'
+    },
+    {
+        value:'alternate',
+        name: 'éxotique'
+    }
+] ;
 
 export default class ButtonTheme extends React.Component {
 
@@ -14,7 +29,7 @@ export default class ButtonTheme extends React.Component {
         const { content , img } = this.props ;
 
         return(
-            <section className={`wrap-btn-theme ${this.context.theme}`}>
+            <section className={`dragger-active wrap-btn-theme ${this.context.theme}`}>
                 <button>
                     {/* content define `img` props or alternate text `content` props */}
                     {
@@ -26,10 +41,10 @@ export default class ButtonTheme extends React.Component {
                             width="42"
                             height="42"
                         /> : content
-                    }
+                    }    
                 </button>
-
-                {/* <Dragger options={list} onClick={this.context.toggleTheme} /> */}
+                
+                <Dragger options={list} onClick={this.context.toggleTheme} />
 
             </section>
         ) ;

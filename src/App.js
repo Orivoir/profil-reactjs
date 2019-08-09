@@ -18,7 +18,7 @@ export default class App extends React.Component {
 
     // Define state function change the current theme
     this.state.toggleTheme = change => {
-      
+
       this.setState( state => ( {
 
         // TURN THEME
@@ -27,7 +27,7 @@ export default class App extends React.Component {
         //   ( state.theme === themes.dark ) ? themes.alt : themes.light
 
         // CHOICE THEME
-        // theme: change
+        theme: change
       
         } ) ) ;
 

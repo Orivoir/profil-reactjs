@@ -3,6 +3,7 @@
 */
 .wrap-btn-theme {
 
+    position: relative;
     margin: .6vh 1.2vh;
 }
 

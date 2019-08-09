@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom' ;
 import { routes } from './../routes' ;
 import './Navbar.css' ;
 
-export const Navbar = () => (
+export const Navbar = ({activeLink}) => (
     <nav id="navbar">
         <ul>
             { routes.map( (route,key) => (
                 <li key={key}>
-                    <NavLink to={route.path}>
+                    <NavLink exact to={route.path} activeClassName="current">
                         {route.name}
                     </NavLink>
                 </li>

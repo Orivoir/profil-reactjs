@@ -21,6 +21,31 @@
   }
 
 }
+@keyframes underlineMiddle {
+
+  from {
+    width: 0;
+    margin-left: 50%;
+  }
+  
+  to {
+      width: 100%;
+  }
+
+}
+
+@-webkit-keyframes underlineMiddle {
+
+  from {
+    width: 0;
+    margin-left: 50%;
+  }
+  
+  to {
+    width: 100%;
+  }
+
+}
 
 body {
   margin: 0;

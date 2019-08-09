@@ -1,0 +1,32 @@
+
+.dragger-active:hover .dragger {
+
+    display: block;
+}
+
+.dragger {
+
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    padding: .4vh 1.2vh;
+    padding-bottom: 2vh;
+    display: none;
+}
+
+.dragger .dragger-item span {
+
+    cursor: pointer;
+}
+
+.light .dragger {
+
+    background: #dfe6e9;
+}
+
+
+.light .dragger .dragger-item span:hover {
+
+    color:  #2c3e50;
+}

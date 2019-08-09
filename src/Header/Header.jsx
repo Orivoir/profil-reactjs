@@ -13,7 +13,7 @@ export default class Header extends React.Component {
 
     render() {
 
-        const { toggleTheme } = this.props ;
+        const { toggleTheme , activeLink } = this.props ;
 
         return (
             
@@ -26,7 +26,7 @@ export default class Header extends React.Component {
                     logo={logo}
                 />
 
-                <Navbar />
+                <Navbar activeLink={activeLink} />
 
             </header>
         );
