@@ -1,6 +1,7 @@
 import React from 'react';
 import { Theme } from './../Theme' ;
 import pencolorImg from './pencolor.png' ;
+import pencolorImgDark from './pencolorDark.svg' ;
 import Dragger from './../Dragger/Dragger' ;
 import './ButtonTheme.css' ;
 
@@ -35,7 +36,7 @@ export default class ButtonTheme extends React.Component {
                     {
                         img ?
                         <img
-                            src={pencolorImg}
+                            src={( this.context.theme === 'light' ? pencolorImg : pencolorImgDark )}
                             alt="logo pen color"
                             // define default size (px)
                             width="42"
