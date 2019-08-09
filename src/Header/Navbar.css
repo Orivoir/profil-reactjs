@@ -77,6 +77,31 @@
     color: #2c3e50;
 }
 
+.dark #navbar ul li a:hover::before {
+    background: #be2edd;
+}
+
+.dark #navbar ul li a {
+
+    color: #be2edd;
+    font-weight: 600;
+}
+.dark #navbar ul li a.current {
+
+    color: #be2edd;
+}
+.dark #navbar ul li a.current::before {
+
+    content: '';
+    position: absolute;
+    height: .85vh;
+    background: #be2edd;
+    width: 100%;
+    top: calc( 100% + 2vh - .85vh );
+    animation: none;
+    -webkit-animation: none;
+}
+
 .alternate #navbar {
 
 }
