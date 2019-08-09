@@ -7,5 +7,6 @@ export const themes = {
 } ;
 
 export const Theme = React.createContext( {
-    theme: themes.dark
+    theme: themes.dark ,
+    tip: themes.dark
 } ) ;

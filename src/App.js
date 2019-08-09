@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import { Route , Switch } from 'react-router-dom'
-
+import { Route , Switch } from 'react-router-dom';
 import { Theme , themes } from './Theme' ;
-
 import { routes } from './routes' ;
 
 export default class App extends React.Component {
   
   state = {
-    theme: themes.dark ,
+    theme: themes.dark,
+    tip: themes.light
   } ;
 
   constructor( props ) {
@@ -19,17 +18,13 @@ export default class App extends React.Component {
     // Define state function change the current theme
     this.state.toggleTheme = change => {
 
+      this.setState({ theme: change } ) ;
+
       this.setState( state => ( {
-
-        // TURN THEME
-        // theme:
-        //   ( state.theme === themes.light ) ? themes.dark :
-        //   ( state.theme === themes.dark ) ? themes.alt : themes.light
-
-        // CHOICE THEME
-        theme: change
       
-        } ) ) ;
+        tip: state.theme !== 'alternate' ? (state.theme === 'light' ? 'dark' : 'light' ) : 'success' 
+      
+      } ) ) ;
 
     }
 

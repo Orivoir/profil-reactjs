@@ -1,31 +1,47 @@
 import React from 'react' ;
 import { Link } from 'react-router-dom' ;
 import ButtonTheme from './ButtonTheme';
-
 import './Title.css' ;
+import ReactTooltip from 'react-tooltip' ;
+import { Theme } from './../Theme' ;
 
-export const Title = ({text , bq , logo,toggleTheme}) => (
-    
-    <section id="wrap-title">
+class Title extends React.Component {
 
-        <Link to="/">
+    static contextType = Theme ; 
+
+    render() {
+
+        const {text , bq , logo,toggleTheme} = this.props ;
+
+        return(
             
-            <img
-                src={ logo }
-                alt="logo home"
+            <section id="wrap-title">
 
-                // Default dim (px)
-                width="75"
-                height="75"
-            />
+                <Link to="/">
+                    
+                    <img
+                        data-tip="Awesome"
+                        data-iscapture="true"
+                        src={ logo }
+                        alt="logo home"
+                        
+                        // Default dim (px)
+                        width="75"
+                        height="75"
+                    />
+                    
+                    <ReactTooltip type={this.context.tip} />
 
-        </Link>
+                </Link>
 
-        <h1> { text || 'Lorem Ipsum' } </h1>
-        <blockquote> { bq || 'Culpa in quis ullamco ...' } </blockquote>
+                <h1> { text || 'Lorem Ipsum' } </h1>
+                <blockquote> { bq || 'Culpa in quis ullamco ...' } </blockquote>
 
-        {/* component toggle provider theme button  */}
-        <ButtonTheme content="thémes" img onClick={toggleTheme} />
+                {/* component toggle provider theme button  */}
+                <ButtonTheme content="thémes" img onClick={toggleTheme} />
 
-    </section>
-) ;
+            </section>
+        ) ;
+    }
+} ;
+export {Title} ;
