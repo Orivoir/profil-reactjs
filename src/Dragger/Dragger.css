@@ -24,10 +24,25 @@
 .light .dragger {
 
     background: #dfe6e9;
-}
 
+}
 
 .light .dragger .dragger-item span:hover {
 
     color:  #2c3e50;
+}
+
+
+.dark .dragger {
+
+    background: #232323;
+}
+.dark .dragger .dragger-item span {
+
+    color: #bdc3c7;
+}
+
+.dark .dragger .dragger-item span:hover {
+
+    color:  #fff;
 }
