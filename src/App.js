@@ -17,13 +17,17 @@ export default class App extends React.Component {
     super( props ) ;
 
     // Define state function change the current theme
-    this.state.toggleTheme = () => {
+    this.state.toggleTheme = change => {
       
       this.setState( state => ( {
 
-        theme:
-          ( state.theme === themes.light ) ? themes.dark :
-          ( state.theme === themes.dark ) ? themes.alt : themes.light
+        // TURN THEME
+        // theme:
+        //   ( state.theme === themes.light ) ? themes.dark :
+        //   ( state.theme === themes.dark ) ? themes.alt : themes.light
+
+        // CHOICE THEME
+        // theme: change
       
         } ) ) ;
 

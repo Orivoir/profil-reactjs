@@ -1,3 +1,6 @@
+/**
+* global style
+*/
 #wrap-title {
 
     display: flex;
@@ -9,22 +12,78 @@
 #wrap-title h1 ,
 #wrap-title blockquote {
 
+    user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
     margin:0;
     font-size: 2rem;
+
+    /* position relative for before element positional */
+    position: relative; 
 }
 
 #wrap-title blockquote {
 
     font-size: 1.15rem;
+    font-style: italic;
 }
 
+#wrap-title h1::before , #wrap-title blockquote::before {
+
+    content: '' ;
+
+    position: absolute;
+    width: 0;
+}
+
+#wrap-title h1::before {
+    
+    height: 3px;
+    animation: underline 1s linear 1s forwards ;
+    -webkit-animation: underline 1s linear 1s forwards ;
+}
+
+#wrap-title blockquote::before {
+    
+    height: 2px;
+    top: 100%;
+    animation: underline 1s linear 2s forwards ;
+    -webkit-animation: underline 1s linear 2s forwards ;
+}
+
+/**
+* theme style
+*/
+.light #wrap-title {
+
+    background: #dfe6e9;
+}
+
+.light blockquote {
+
+    color: rgb( 35,35,35 ) ;
+}
+
+.light #wrap-title h1::before {
+    
+    background: rgb(211, 160, 30) ;
+}
+
+.light #wrap-title blockquote::before {
+    
+    background:  rgb( 35,35,35 ) ;
+}
+
+/**
+* responsive style
+*/
 @media screen and (max-width: 685px) {
 
     #wrap-title {
         flex-direction: column;
     }
 }
-
 
 @media screen and (max-width: 450px) {
 

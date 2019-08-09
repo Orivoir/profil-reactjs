@@ -25,7 +25,7 @@ export const Title = ({text , bq , logo,toggleTheme}) => (
         <blockquote> { bq || 'Culpa in quis ullamco ...' } </blockquote>
 
         {/* component toggle provider theme button  */}
-        <ButtonTheme content="thémes" onClick={toggleTheme} />
+        <ButtonTheme content="thémes" img onClick={toggleTheme} />
 
     </section>
 ) ;

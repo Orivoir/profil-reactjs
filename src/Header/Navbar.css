@@ -1,3 +1,6 @@
+/**
+* global style
+*/
 #navbar {
     padding: 1.85vh 0;
 }
@@ -7,6 +10,37 @@
     padding: 0;
     display: flex;
     justify-content: space-around;
+}
+
+/**
+* theme style
+*/
+.light #navbar {
+
+    background: #2c3e50;
+}
+
+.light #navbar ul li a {
+
+    color: #ecf0f1;
+}
+
+.light #navbar ul {
+
+}
+
+.dark #navbar {
+
+}
+.dark #navbar ul {
+
+}
+
+.alternate #navbar {
+
+}
+.alternate #navbar ul {
+
 }
 
 /**
