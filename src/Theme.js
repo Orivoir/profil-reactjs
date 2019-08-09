@@ -7,5 +7,5 @@ export const themes = {
 } ;
 
 export const Theme = React.createContext( {
-    theme: themes.light
+    theme: themes.dark
 } ) ;
