@@ -14,11 +14,12 @@
 
 #navbar ul li {
 
-    padding: 2vh;
+    padding: 2vh 0;
 }
 #navbar ul li a {
 
     position: relative;
+    padding: 0 2vh;
 }
 
 #navbar ul li a:hover::before  {
@@ -35,12 +36,22 @@
     -webkit-animation: underlineMiddle .28s linear forwards;
 }
 
+#navbar ul li {
+
+    transition: .35s linear background ;
+}
+
 /**
 * theme style
 */
 .light #navbar {
 
     background: #2c3e50;
+}
+
+.light #navbar ul li:hover {
+
+    background: rgba(255,255,255,.12);
 }
 
 .light #navbar ul li a:hover::before {
@@ -62,6 +73,7 @@
     height: .85vh;
     background: #00cec9;
     width: 100%;
+    left: 0;
     top: calc( 100% + 2vh - .85vh );
     animation: none;
     -webkit-animation: none;
@@ -74,29 +86,35 @@
 
 .dark #navbar ul li a {
     
-    color: #2c3e50;
+    color: rgb(44, 62, 80);
+}
+
+.dark #navbar ul li:hover {
+
+    background: rgba(44, 62, 80, .18) ;
 }
 
 .dark #navbar ul li a:hover::before {
-    background: #be2edd;
+    background: #30336b;
 }
 
 .dark #navbar ul li a {
 
-    color: #be2edd;
+    color: #30336b;
     font-weight: 600;
 }
 .dark #navbar ul li a.current {
 
-    color: #be2edd;
+    color: #30336b;
 }
 .dark #navbar ul li a.current::before {
 
     content: '';
     position: absolute;
     height: .85vh;
-    background: #be2edd;
+    background: #30336b;
     width: 100%;
+    left: 0;
     top: calc( 100% + 2vh - .85vh );
     animation: none;
     -webkit-animation: none;
