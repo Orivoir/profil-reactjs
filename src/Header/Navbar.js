@@ -9,7 +9,6 @@ export default class Navbar extends React.Component {
 
         super( props ) ;
 
-        this.navRef = React.createRef() ;
         this.scrollAction = this.scrollAction.bind( this ) ;
     }
 
@@ -20,10 +19,10 @@ export default class Navbar extends React.Component {
     scrollAction( {pageY} ) {
 
         const
-            navbar = this.navRef.current ,
+            navbar = document.querySelector('header nav') ,
             mainTitle = document.querySelector('header #wrap-title')
         ;
-
+        
         if( pageY > mainTitle.offsetHeight ) {
 
             navbar.classList.add('fixed') ;
@@ -34,7 +33,7 @@ export default class Navbar extends React.Component {
     }
 
     componentDidMount() {
-
+        
         window.addEventListener( 'scroll' , this.scrollAction ) ;
 
     }
@@ -47,7 +46,7 @@ export default class Navbar extends React.Component {
     render(){
         
         return (
-            <nav id="navbar" ref={this.navRef} >
+            <nav id="navbar">
                 <ul>
                     { routes.map( (route,key) => (
                         <li key={key}>
@@ -60,5 +59,4 @@ export default class Navbar extends React.Component {
             </nav>
         ) ;
     }
-
 } ;
