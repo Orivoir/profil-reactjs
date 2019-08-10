@@ -1,13 +1,14 @@
 import React from 'react' ;
 import {Theme} from './../Theme';
 import './Main.css' ;
+import Tablebar from './Tablebar' ;
 
 export default class Main extends React.Component {
     
     static contextType = Theme ;
 
     state = {
-        reversed: false
+        left: true
     } ;
 
     constructor( props ) {
@@ -27,24 +28,37 @@ export default class Main extends React.Component {
 
         this.setState( state => (
         
-            { reversed: !state.reversed }
+            { left: !state.left }
         
         ) ) ;
     }
 
     render() {
 
-        const { children , anchor } = this.props ;
+        const { children , anchors } = this.props ;
 
         return (
-
             <main className={`${this.context.theme} ${this.state.reversed ? 'flex-reversed' : ''}`}>
 
-                {/* <Tablebar content={anchors} onReversed={this.onChangeReversed} /> */}
+                <Tablebar
+                    status={this.state.left}
+                    anchors={anchors}
+                    onReversed={this.onChangeReversed}
+                />
 
-                <section>
-                    {children}
+                <section className="main-children">
+                    <div className="wrap-children">
+                        {children}
+                    </div>
                 </section>
+
+                
+                <Tablebar
+                    status={!this.state.left}
+                    anchors={anchors}
+                    onReversed={this.onChangeReversed}
+                />
+
             </main>
         ) ;
     }

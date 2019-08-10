@@ -1,6 +1,19 @@
 main {
 
     display: flex;
+    min-height: 100%;
+}
+
+.main-children {
+
+    flex:2;
+}
+
+.wrap-children {
+
+    width: 80%;
+    min-width: 375px;
+    margin: auto;
 }
 
 main.light {}
