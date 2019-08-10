@@ -1,5 +1,7 @@
 
-.dragger-active:hover .dragger {
+.dragger-active:hover .dragger ,
+.dragger-active:focus .dragger
+{
 
     display: block;
 }

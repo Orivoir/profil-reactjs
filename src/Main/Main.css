@@ -1,0 +1,10 @@
+main {
+
+    display: flex;
+}
+
+main.light {}
+
+main.dark {}
+
+main.alternate {}

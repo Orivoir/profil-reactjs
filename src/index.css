@@ -74,3 +74,8 @@ button {
 ul {
   list-style: none;
 }
+
+.flex-reversed {
+
+  flex-direction: row-reverse ;
+}
