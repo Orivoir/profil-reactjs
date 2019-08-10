@@ -2,7 +2,7 @@ import React from 'react' ;
 
 import {Theme} from './../Theme' ;
 import {Title} from './Title';
-import {Navbar} from './Navbar';
+import Navbar from './Navbar';
 
 import logo from './logo.png' ;
 import logoDark from './logoDark.svg' ;
@@ -11,6 +11,13 @@ import './Header.css' ;
 export default class Header extends React.Component {
     
     static contextType = Theme ;
+
+    constructor(props) {
+
+        super( props ) ;
+
+        this.navRef = React.createRef() ;
+    }
 
     render() {
 

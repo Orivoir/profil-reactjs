@@ -17,6 +17,59 @@ export default class Home extends React.Component {
                         anchors={[{path:"/#abc" , name:"abc" },{path:"/#def",name:"def"}]}
                     >
                         <h1>Lorem Ipsum</h1>
+                        <blockquote>Home factory content</blockquote>
+
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+                        <p>Plage for scroll navbar</p>
+
                     </Main>
                 </>
 
