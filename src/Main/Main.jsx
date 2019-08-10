@@ -40,7 +40,7 @@ export default class Main extends React.Component {
 
             <main className={`${this.context.theme} ${this.state.reversed ? 'flex-reversed' : ''}`}>
 
-                {/* <Tablebar content={anchor} /> */}
+                {/* <Tablebar content={anchors} onReversed={this.onChangeReversed} /> */}
 
                 <section>
                     {children}
