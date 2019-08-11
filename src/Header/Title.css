@@ -105,6 +105,36 @@
     top: 0;
 }
 
+.alternate #wrap-title {
+
+    
+    background: #8e44ad ;
+}
+
+.alternate #wrap-title h1 {
+
+    
+    color: #f5f6fa ;
+}
+
+.alternate blockquote {
+
+    color: #38ada9 ;
+}
+
+.alternate #wrap-title h1::before {
+    
+    background: #f39c12 ;
+    
+    top: 100%;
+}
+
+.alternate #wrap-title blockquote::before {
+    
+    background:  #b71540 ;
+    top: 0;
+}
+
 /**
 * responsive style
 */
