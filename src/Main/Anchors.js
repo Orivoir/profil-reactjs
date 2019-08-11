@@ -1,16 +1,19 @@
 import React from 'react' ;
 import './Anchors.css' ;
-import {Link} from 'react-router-dom' ;
+import AnchorLink from 'react-anchor-link-smooth-scroll' ;
 
 export const Anchors = ({links}) => (
     <ul className="anchors-list">
         {
             links.map( (link,key) => (
                 <li key={key}>
-                    <Link to={ (document.location.href + link.path)}>
+
+                    <AnchorLink href={link.path}>
+                        
                         <span role="img" aria-label="anchor">⚓</span>&nbsp; 
                         {link.name}
-                    </Link>
+
+                    </AnchorLink>
                 </li>
             ) )
         }
