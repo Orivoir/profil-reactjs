@@ -125,10 +125,21 @@
 
 .alternate #navbar {
 
+    background: linear-gradient( to left  , #c23616 , #fbc531 ) ;
 }
-.alternate #navbar ul {
 
+.alternate #navbar ul li a {
+
+    color: #273c75;
+    font-weight: 600;
 }
+
+.alternate #navbar ul li:hover {
+
+    background: rgba(142, 68, 173, .18) ;
+}
+
+
 
 /**
 * responsive style
