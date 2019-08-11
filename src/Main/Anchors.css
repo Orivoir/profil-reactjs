@@ -35,3 +35,13 @@ ul.anchors-list li a {
 
     background: rgba(255, 255, 255, .18) ;
 }
+
+.alternate ul.anchors-list li a {
+
+    color: rgb(39, 174, 96);
+}
+
+.alternate ul.anchors-list li:hover {
+
+    background: rgba(142, 68, 173, .18) ;
+}

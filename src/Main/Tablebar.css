@@ -70,6 +70,11 @@
     background: #2c3e50;
 }
 
+.alternate .wrap-tablebar {
+
+    background: linear-gradient(#fbc531 , #c23616);
+}
+
 
 @media screen and (max-width:575px) {
 
