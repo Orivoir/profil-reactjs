@@ -1,0 +1,27 @@
+.cookie-banner {
+
+    background: rgb(0,0,0,.85);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 2vh;
+}
+
+.cookie-banner a {
+
+    color: rgb(  180,180,180 );
+}
+
+.cookie-banner div {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-banner p {
+
+    margin: 0 3vh;
+}

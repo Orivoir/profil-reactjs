@@ -55,6 +55,7 @@ html , body , #root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  overflow-x:  hidden;
 }
 
 code {
@@ -81,6 +82,11 @@ ul {
 .flex-reversed {
 
   flex-direction: row-reverse ;
+}
+
+.hide {
+
+  display: none;
 }
 
 .v-hidden {

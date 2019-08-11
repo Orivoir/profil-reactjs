@@ -2,13 +2,16 @@ import React from 'react' ;
 import {Theme} from './../Theme';
 import './Main.css' ;
 import Tablebar from './Tablebar' ;
+import CookieBanner from './../CookieBanner/CookieBanner' ;
+
 
 export default class Main extends React.Component {
     
     static contextType = Theme ;
 
     state = {
-        left: true
+        left: true ,
+        cookieBanner: null
     } ;
 
     constructor( props ) {
@@ -33,9 +36,22 @@ export default class Main extends React.Component {
         ) ) ;
     }
 
+    componentDidMount() {
+
+        const useCookie = sessionStorage.getItem('useCookie') ;
+
+        if( !useCookie ) {
+            this.setState( { 
+                cookieBanner: <CookieBanner />
+            } ) ;
+        }
+    }
+
     render() {
 
         const { children , anchors } = this.props ;
+
+        console.log( this.state.left );
 
         return (
             <main className={`${this.context.theme} ${this.state.reversed ? 'flex-reversed' : ''}`}>
@@ -59,6 +75,8 @@ export default class Main extends React.Component {
                     anchors={anchors}
                     onReversed={this.onChangeReversed}
                 />
+
+                {this.state.cookieBanner}
 
             </main>
         ) ;
