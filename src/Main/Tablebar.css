@@ -1,3 +1,8 @@
+.wrap-tablebar {
+
+    transition: .3s linear transform;
+}
+
 .wrap-tablebar section button {
 
     width: 100%;
@@ -9,6 +14,50 @@
 .wrap-btn-reversed {
 
     margin-bottom: 4.5vh;
+}
+
+.font-collapse-table-bar {
+
+    text-align: center;
+}
+
+.font-collapse-table-bar svg  {
+
+    padding: 1.8vh;
+    cursor: pointer;
+}
+
+.wrap-tablebar.close {
+
+    position: relative;
+}
+
+.wrap-tablebar.close.left {
+
+    transform: translateX( -70% ) ;
+}
+.wrap-tablebar.close.right {
+
+    transform: translateX( 70% ) ;
+}
+
+.wrap-tablebar.close.left .font-collapse-table-bar {
+
+    text-align: right ;
+}
+
+.wrap-tablebar.close.right .font-collapse-table-bar {
+
+    text-align: left ;
+}
+
+
+
+.wrap-tablebar.close .wrap-anchors-list ,
+.wrap-tablebar.close .wrap-btn-reversed
+{
+
+    visibility: hidden;
 }
 
 .dark .wrap-tablebar {

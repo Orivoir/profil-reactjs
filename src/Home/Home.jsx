@@ -17,8 +17,8 @@ export default class Home extends React.Component {
                         // Factory anchors
                         anchors={
                             [
-                                {path:"#abc" , name:"abc" },
-                                {path:"#def",name:"def ijk"}
+                                { path: "#abc", name:"abc" },
+                                { path: "#def", name: "def ijk" }
                             ]
                         }
                     >

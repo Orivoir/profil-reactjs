@@ -44,6 +44,7 @@ export default class Main extends React.Component {
                     status={this.state.left}
                     anchors={anchors}
                     onReversed={this.onChangeReversed}
+                    left
                 />
 
                 <section className="main-children">
