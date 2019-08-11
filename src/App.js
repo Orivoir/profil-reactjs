@@ -8,7 +8,8 @@ export default class App extends React.Component {
   
   state = {
     theme: themes.dark,
-    tip: themes.light
+    tip: themes.light ,
+    titleDoc: 'home'
   } ;
 
   constructor( props ) {
