@@ -51,8 +51,6 @@ export default class Main extends React.Component {
 
         const { children , anchors } = this.props ;
 
-        console.log( this.state.left );
-
         return (
             <main className={`${this.context.theme} ${this.state.reversed ? 'flex-reversed' : ''}`}>
 
