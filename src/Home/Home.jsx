@@ -22,60 +22,9 @@ export default class Home extends React.Component {
                             ]
                         }
                     >
-                        <h1>Lorem Ipsum</h1>
-                        <blockquote>Home factory content</blockquote>
-
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-                        <p>Plage for scroll navbar</p>
-
+                    
+                        {/* Write home content here */}
+                    
                     </Main>
                 </>
 

@@ -2,8 +2,8 @@ import React from 'react' ;
 import {Theme} from './../Theme';
 import './Tablebar.css' ;
 import {Anchors} from './Anchors' ;
-import arrowTransferImg from './arrow-transfer.png' ;
 import ReactTooltip from 'react-tooltip' ;
+
 /**
 * git expemples repository :  
 * <https://github.com/FortAwesome/react-fontawesome/blob/master/examples/create-react-app/src/App.js#L63>
@@ -51,6 +51,7 @@ export default class Tablebar extends React.Component {
 
         const
             { onReversed , anchors , status } = this.props ,
+            iconColor = "#" + ( this.context.theme === 'light' ? "bdc3c7" : ( this.context.theme === 'dark' ? "2c3e50" : "27ae60" ) ) ,
             anchorsComponent = ( anchors instanceof Array && anchors.length ) ? (
                 <>
                     {/* reverse button */}
@@ -59,13 +60,13 @@ export default class Tablebar extends React.Component {
                             onClick={onReversed}
                             data-tip="échanger"
                         >
-                            <img
-                                src={arrowTransferImg}
-                                alt="arrow transfer"
-                                // default size (px)
-                                width="20"
-                                height="20"
-                            />
+                            <FontAwesomeIcon
+                                style={ {color: iconColor } }
+                                data-tip="échanger"
+                                onClick={this.onToggleTablebar}
+                                icon={['fas' , 'exchange-alt' ]}
+                                size="2x"
+                            />    
                         </button>
                     </section>
 
@@ -77,7 +78,7 @@ export default class Tablebar extends React.Component {
 
                     <section className="font-collapse-table-bar">
                         <FontAwesomeIcon
-                            
+                            style={ {color: iconColor } }
                             data-tip={ this.state.status ? "fermer" : "ouvrir" }
                             onClick={this.onToggleTablebar}
                             icon={['fas' , 'angle-up' ]}

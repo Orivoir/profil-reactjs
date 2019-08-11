@@ -14,10 +14,24 @@ ul.anchors-list li a {
 
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.dark ul.anchors-list li a {
+
     color: #30336b;
 }
 
 .dark ul.anchors-list li:hover {
 
     background: rgba(44, 62, 80, .18) ;
+}
+
+.light ul.anchors-list li a {
+
+    color: #00cec9;
+}
+
+.light ul.anchors-list li:hover {
+
+    background: rgba(255, 255, 255, .18) ;
 }
