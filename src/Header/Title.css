@@ -145,3 +145,11 @@
     }
 
 }
+
+@media screen and (max-width: 355px) {
+
+    #wrap-title a {
+
+        display: none;
+    }
+}

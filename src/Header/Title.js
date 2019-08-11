@@ -17,10 +17,10 @@ class Title extends React.Component {
             
             <section id="wrap-title">
 
-                <Link to="/">
+                <Link className="link-home" to="/">
                     
                     <img
-                        data-tip="Awesome"
+                        data-tip="home"
                         data-iscapture="true"
                         src={ logo }
                         alt="logo home"

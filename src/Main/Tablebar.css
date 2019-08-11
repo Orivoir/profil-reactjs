@@ -1,0 +1,25 @@
+.wrap-tablebar section button {
+
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.wrap-btn-reversed {
+
+    margin-bottom: 4.5vh;
+}
+
+.dark .wrap-tablebar {
+
+    background: #bdc3c7;
+}
+
+@media screen and (max-width:575px) {
+
+    .wrap-tablebar {
+
+        display: none;
+    }
+}

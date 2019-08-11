@@ -3,3 +3,21 @@ ul.anchors-list {
     margin: 0;
     padding: 0;
 }
+
+ul.anchors-list li {
+
+    padding: 3.5vh;
+    transition: .35s linear all ;
+}
+
+ul.anchors-list li a {
+
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #30336b;
+}
+
+.dark ul.anchors-list li:hover {
+
+    background: rgba(44, 62, 80, .18) ;
+}

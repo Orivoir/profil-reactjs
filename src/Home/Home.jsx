@@ -14,7 +14,13 @@ export default class Home extends React.Component {
                     <Header />
 
                     <Main
-                        anchors={[{path:"/#abc" , name:"abc" },{path:"/#def",name:"def"}]}
+                        // Factory anchors
+                        anchors={
+                            [
+                                {path:"#abc" , name:"abc" },
+                                {path:"#def",name:"def ijk"}
+                            ]
+                        }
                     >
                         <h1>Lorem Ipsum</h1>
                         <blockquote>Home factory content</blockquote>

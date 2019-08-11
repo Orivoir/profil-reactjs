@@ -10,28 +10,35 @@ export default class Tablebar extends React.Component {
 
     render() {
 
-        const { onReversed , anchors , status } = this.props ;
+        const
+            { onReversed , anchors , status } = this.props ,
+            anchorsComponent = ( anchors instanceof Array && anchors.length ) ? (
+                <>
+                    {/* reverse button */}
+                    <section className="wrap-btn-reversed">
+                        <button onClick={onReversed}>
+                            <img
+                                src={arrowTransferImg}
+                                alt="arrow transfer"
+                                // default size (px)
+                                width="20"
+                                height="20"
+                            />
+                        </button>
+                    </section>
+
+                    {/* anchors list */}
+                    <section className="wrap-anchors-list">
+                        <Anchors links={anchors} />
+                    </section>
+                </>
+            ) : null
+        ;
 
         return(
-            <section className={`${this.context.theme} ${status ? 'visible':'v-hidden'}`}>
+            <section className={`wrap-tablebar ${this.context.theme} ${status ? 'visible':'v-hidden'}`}>
 
-                {/* reverse button */}
-                <section>
-                    <button onClick={onReversed}>
-                        <img
-                            src={arrowTransferImg}
-                            alt="arrow transfer"
-                            // default size (px)
-                            width="20"
-                            height="20"
-                        />
-                    </button>
-                </section>
-
-                {/* anchors list */}
-                <section>
-                    <Anchors links={anchors} />
-                </section>
+                {anchorsComponent}
 
             </section>
         );

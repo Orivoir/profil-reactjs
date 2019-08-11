@@ -7,8 +7,8 @@ export const Anchors = ({links}) => (
         {
             links.map( (link,key) => (
                 <li key={key}>
-                    <Link to={link.path}>
-                        <span role="img" aria-label="anchor">⚓</span> 
+                    <Link to={ (document.location.href + link.path)}>
+                        <span role="img" aria-label="anchor">⚓</span>&nbsp; 
                         {link.name}
                     </Link>
                 </li>
