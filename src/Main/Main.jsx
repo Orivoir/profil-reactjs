@@ -3,6 +3,7 @@ import {Theme} from './../Theme';
 import './Main.css' ;
 import Tablebar from './Tablebar' ;
 import CookieBanner from './../CookieBanner/CookieBanner' ;
+import Footer from './../Footer/Footer' ;
 
 
 export default class Main extends React.Component {
@@ -52,31 +53,35 @@ export default class Main extends React.Component {
         const { children , anchors } = this.props ;
 
         return (
-            <main className={`${this.context.theme} ${this.state.reversed ? 'flex-reversed' : ''}`}>
+            <>
+                <main className={`${this.context.theme} ${this.state.reversed ? 'flex-reversed' : ''}`}>
 
-                <Tablebar
-                    status={this.state.left}
-                    anchors={anchors}
-                    onReversed={this.onChangeReversed}
-                    left
-                />
+                    <Tablebar
+                        status={this.state.left}
+                        anchors={anchors}
+                        onReversed={this.onChangeReversed}
+                        left
+                    />
 
-                <section className="main-children">
-                    <div className="wrap-children">
-                        {children}
-                    </div>
-                </section>
+                    <section className="main-children">
+                        <div className="wrap-children">
+                            {children}
+                        </div>
+                    </section>
 
-                
-                <Tablebar
-                    status={!this.state.left}
-                    anchors={anchors}
-                    onReversed={this.onChangeReversed}
-                />
+                    
+                    <Tablebar
+                        status={!this.state.left}
+                        anchors={anchors}
+                        onReversed={this.onChangeReversed}
+                    />
 
-                {this.state.cookieBanner}
+                    {this.state.cookieBanner}
 
-            </main>
+
+                </main>
+                <Footer />
+            </>
         ) ;
     }
 };

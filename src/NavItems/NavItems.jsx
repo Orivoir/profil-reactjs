@@ -4,6 +4,7 @@ import './NavItems.css' ;
 import {Link} from 'react-router-dom' ;
 import reactImg from './reactjs.png' ;
 import wf3Course from './wf3-course.jpg';
+import ReactTooltip from 'react-tooltip' ;
 
 /**
 * git expemples repository :  
@@ -31,6 +32,7 @@ export default class NavItems extends React.Component {
                     wrap-nav-items
                 `}
             >
+                <ReactTooltip type={ this.context.type } />
                 <ul>
                     <li className="nav-item">
                       
@@ -60,7 +62,12 @@ export default class NavItems extends React.Component {
                                     <figcaption>
 
                                         <p>
-                                            <a target="_blank" href="https://twitter.com/WebForce3/status/1003554210254901249">
+                                            <a
+
+                                                target="_blank"
+                                                href="https://twitter.com/WebForce3/status/1003554210254901249"
+                                                data-tip="lire sur twitter ?"
+                                            >
 
                                                 <FontAwesomeIcon
                                                     icon={['fab' , 'twitter' ]}
