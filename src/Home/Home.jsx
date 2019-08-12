@@ -4,6 +4,7 @@ import DocumentTitle from 'react-document-title' ;
 import Main from './../Main/Main' ;
 import {Theme} from './../Theme' ;
 import NavItems from './../NavItems/NavItems' ;
+import HowAreYou from './../HowAreYou/HowAreYou' ;
 
 export default class Home extends React.Component {
 
@@ -21,7 +22,8 @@ export default class Home extends React.Component {
                         // Factory anchors
                         anchors={
                             [
-                                { path: "#nav-items", name:"get started" }
+                                { path: "/#nav-items", name:"get started" } ,
+                                { path: "/#how-are-you", name:"qui sui-je ?" }
                             ]
                         }
                     >
@@ -30,6 +32,10 @@ export default class Home extends React.Component {
 
                         {/* navigable element banner */}
                         <NavItems />
+
+
+                        {/* component of present me */}
+                        <HowAreYou />
 
                     </Main>
                 </>

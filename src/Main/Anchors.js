@@ -1,6 +1,5 @@
 import React from 'react' ;
 import './Anchors.css' ;
-import AnchorLink from 'react-anchor-link-smooth-scroll' ;
 
 /**
 * git expemples repository :  
@@ -20,7 +19,7 @@ export const Anchors = ({links}) => (
             links.map( (link,key) => (
                 <li key={key}>
 
-                    <AnchorLink href={link.path}>
+                    <a href={link.path}>
                         
                         <FontAwesomeIcon 
 
@@ -29,7 +28,7 @@ export const Anchors = ({links}) => (
                         />&nbsp;
                         {link.name}
 
-                    </AnchorLink>
+                    </a>
                 </li>
             ) )
         }

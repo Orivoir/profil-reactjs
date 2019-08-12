@@ -1,0 +1,36 @@
+#how-are-you {
+
+    margin: 4.8vh 0;
+    padding: 3vh 4.5vh;
+}
+
+#how-are-you h2 {
+
+    font-weight: 600;
+}
+
+
+#how-are-you p {
+
+    line-height: 1.8rem;
+    letter-spacing: .2rem;
+}
+
+#how-are-you.dark {
+    
+    background: rgba( 255,255,255 , .75 );
+}
+#how-are-you.dark p a {
+
+    color: #30336b;
+}
+
+#how-are-you.light {
+    
+    color: #fff;
+    background: rgba( 0,0,0 , .75 );
+}
+#how-are-you.light p a {
+
+    color: #00cec9;
+}

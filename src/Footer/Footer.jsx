@@ -38,7 +38,7 @@ export default class Footer extends React.Component {
                     <li>
                         Liscence&nbsp;
                         <a href="https://www.gnu.org/licenses/lgpl-3.0.txt">GNU/GPL</a>
-                        - 2019 des gens biens 
+                        - {new Date().getFullYear()} des gens biens 
                     </li>
 
                 </ul>
