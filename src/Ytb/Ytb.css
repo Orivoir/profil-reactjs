@@ -1,0 +1,21 @@
+.ytb-integrate {
+
+    text-align: center;
+    padding: 3vh 1vh;
+    margin: 4vh 0;
+}
+
+.ytb-integrate h2 {
+
+    font-weight: 600;
+}
+
+.ytb-integrate iframe {
+
+    width: 85%;
+}
+
+.ytb-integrate.dark {
+
+    background: rgba( 255,255,255 , .8 );
+}

@@ -1,8 +1,8 @@
 .wrap-nav-items ul {
-
+    
+    padding: 0;
     position: relative;
     display: flex;
-
 }
 
 .wrap-nav-items ul li section {
@@ -182,4 +182,13 @@ section aside figure figcaption p a:hover::before {
         background-size: contain;
     }
 
+}
+
+@media screen and (max-width: 575px) {
+    
+    .wrap-nav-items {
+        
+        width: 85%;
+        margin: auto;
+    }
 }

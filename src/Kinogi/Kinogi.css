@@ -1,0 +1,74 @@
+.kinogi {
+
+    padding: 3vh 1.25vh;
+    margin: 2vh 0;
+}
+
+
+
+#kinogi.dark {
+
+    background: rgba( 255,255,255,.8 );
+}
+
+.kinogi section h2 {
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+
+}
+
+.kinogi section figure {
+
+    position: relative;
+    overflow: hidden;
+}
+.kinogi section figure figcaption {
+ 
+    background: rgba(0,0,0,.65);
+    color: #fff;
+    padding: 2vh;
+    z-index: 9999 ;
+    position: absolute;
+    width: 100%;
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+    -ie-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+} 
+.kinogi section figure figcaption a {
+ 
+    padding: 1.5vh;
+    color: #1da1f2;
+} 
+.kinogi section figure figcaption b {
+
+    padding: 0;
+    padding-bottom: .6vh ;
+    margin-right: 1.5vh;
+    border-bottom: 2px solid #daa520;
+    border-top: 2px solid #daa520;
+}
+
+.kinogi section figure img {
+    
+    width: 100%;
+    transition: .35s linear all ;
+}
+
+.kinogi section figure img:hover {
+
+    transform: scale( 1.1 ) ;
+
+}
+
+.kinogi section.devs h2 ul {
+
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: .85rem;
+}

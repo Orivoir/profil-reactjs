@@ -10,9 +10,10 @@ import ReactTooltip from 'react-tooltip' ;
 */
 import { library } from '@fortawesome/fontawesome-svg-core' ;
 import { fab } from '@fortawesome/free-brands-svg-icons' ;
+import { fas } from '@fortawesome/free-solid-svg-icons' ;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-library.add( fab ) ;
+library.add( fab , fas ) ;
 
 export default class HowAreYou extends React.Component {
     
@@ -29,7 +30,14 @@ export default class HowAreYou extends React.Component {
             >
                 <ReactTooltip type={ this.context.type } />
 
-                <h2>Développeur nomade</h2>
+                <h2>
+                    <FontAwesomeIcon
+                        data-tip="Code is mine"
+                        icon={ ['fas' , 'laptop-code' ] }
+                        size="sm"
+                    />&nbsp;
+                    Développeur nomade
+                </h2>
 
                 <p>
                     Samuel Gaborieau {yearOld} ans développeur web&nbsp;
@@ -75,8 +83,13 @@ export default class HowAreYou extends React.Component {
                     </a>&nbsp;
                     je décroche mes certifications de développement/intégrations web<br />
                     à l'issue de cette formation intensive où depuis je continue de<br />
-                    m'auto formé en développeur "nomade" , sur le libre accés du web par passion &amp; curiosité ...
+                    m'auto formé en développeur "nomade" , sur le libre accés du web par passion &amp; curiosité .
                 </p>
+
+                <p>
+                    à suivre ...
+                </p>
+
 
             </section>    
         ) ;

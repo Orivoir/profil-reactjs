@@ -18,7 +18,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 library.add( fab , fas ) ;
 
-
 export default class NavItems extends React.Component {
   
     static contextType = Theme ;
@@ -39,7 +38,7 @@ export default class NavItems extends React.Component {
                         <section className="banner-nav-item hackathon">
 
                             <div className="title-banner">
-                                <Link to="/course">
+                                <Link to="/course#kinogi">
                                     <h2>Hackathon 2018 (Dijon)</h2>
                                     <blockquote>Projet Kinogi</blockquote>
                                 </Link>
