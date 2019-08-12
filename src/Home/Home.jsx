@@ -3,6 +3,7 @@ import Header from './../Header/Header' ;
 import DocumentTitle from 'react-document-title' ;
 import Main from './../Main/Main' ;
 import {Theme} from './../Theme' ;
+import NavItems from './../NavItems/NavItems' ;
 
 export default class Home extends React.Component {
 
@@ -20,15 +21,16 @@ export default class Home extends React.Component {
                         // Factory anchors
                         anchors={
                             [
-                                { path: "#abc", name:"abc" },
-                                { path: "#def", name: "def ijk" }
+                                { path: "#nav-items", name:"get started" }
                             ]
                         }
                     >
                     
                         {/* Write home content here */}
 
-                    
+                        {/* navigable element banner */}
+                        <NavItems />
+
                     </Main>
                 </>
 
