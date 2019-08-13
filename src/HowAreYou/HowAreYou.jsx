@@ -1,8 +1,6 @@
 import React from 'react';
 import {Theme} from './../Theme';
 import './HowAreYou.css' ;
-import ReactTooltip from 'react-tooltip' ;
-
 /**
 * git expemples repository :  
 * <https://github.com/FortAwesome/react-fontawesome/blob/master/examples/create-react-app/src/App.js#L63>
@@ -28,8 +26,6 @@ export default class HowAreYou extends React.Component {
                 id="how-are-you"
                 className={`${this.context.theme}`}
             >
-                <ReactTooltip type={ this.context.type } />
-
                 <h2>
                     <FontAwesomeIcon
                         data-tip="Code is mine"

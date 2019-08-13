@@ -3,6 +3,7 @@ import './App.css';
 import { Route , Switch } from 'react-router-dom';
 import { Theme , themes } from './Theme' ;
 import { routes } from './routes' ;
+import ReactToolTip from 'react-tooltip' ;
 
 export default class App extends React.Component {
   
@@ -45,6 +46,9 @@ export default class App extends React.Component {
             }
 
           </Switch>
+
+          <ReactToolTip type={this.state.tip} />
+
       </Theme.Provider>
     );
   }

@@ -2,7 +2,6 @@ import React from 'react' ;
 import { Link } from 'react-router-dom' ;
 import ButtonTheme from './ButtonTheme';
 import './Title.css' ;
-import ReactTooltip from 'react-tooltip' ;
 import { Theme } from './../Theme' ;
 
 class Title extends React.Component {
@@ -29,8 +28,6 @@ class Title extends React.Component {
                         width="75"
                         height="75"
                     />
-                    
-                    <ReactTooltip type={this.context.tip} />
 
                 </Link>
 

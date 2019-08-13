@@ -2,8 +2,6 @@ import React from 'react' ;
 import {Theme} from './../Theme';
 import './Tablebar.css' ;
 import {Anchors} from './Anchors' ;
-import ReactTooltip from 'react-tooltip' ;
-
 /**
 * git expemples repository :  
 * <https://github.com/FortAwesome/react-fontawesome/blob/master/examples/create-react-app/src/App.js#L63>
@@ -85,9 +83,6 @@ export default class Tablebar extends React.Component {
                             size="2x"
                             rotation={ 90 * this.state.collapseRotation }
                         />
-
-                        
-                        <ReactTooltip type={this.context.tip} />
 
                     </section>
                 </>
