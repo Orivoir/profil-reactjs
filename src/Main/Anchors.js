@@ -1,6 +1,6 @@
 import React from 'react' ;
 import './Anchors.css' ;
-
+import {HashLink as Link} from 'react-router-hash-link';
 /**
 * git expemples repository :  
 * <https://github.com/FortAwesome/react-fontawesome/blob/master/examples/create-react-app/src/App.js#L63>
@@ -19,7 +19,7 @@ export const Anchors = ({links}) => (
             links.map( (link,key) => (
                 <li key={key}>
 
-                    <a href={link.path}>
+                    <Link to={link.path}>
                         
                         <FontAwesomeIcon 
 
@@ -28,7 +28,7 @@ export const Anchors = ({links}) => (
                         />&nbsp;
                         {link.name}
 
-                    </a>
+                    </Link>
                 </li>
             ) )
         }

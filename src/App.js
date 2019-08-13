@@ -8,8 +8,8 @@ import ReactToolTip from 'react-tooltip' ;
 export default class App extends React.Component {
   
   state = {
-    theme: themes.dark,
-    tip: themes.light ,
+    theme: themes.light,
+    tip: themes.dark ,
     titleDoc: 'home'
   } ;
 
