@@ -11,6 +11,7 @@ import {Figcaption as Figc} from './Figcaption' ;
 import { library } from '@fortawesome/fontawesome-svg-core' ;
 import { fab } from '@fortawesome/free-brands-svg-icons' ;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ReactToolTip from 'react-tooltip';
 
 library.add( fab ) ;
 
@@ -65,20 +66,40 @@ export default class Kinogi extends VeniVediKinogi {
                         L'équipe de développeurs du projet
                         <ul>
                             <li>
-                                <p>Anthony Demon</p>
+                                <p
+                                    data-tip="developpeur fullstack"
+                                >
+                                    Anthony Demon
+                                </p>
                             </li>
                             
                             <li>
-                                <p>Samuel Gaborieau</p>
+                                <p
+                                    data-tip="developpeur back-end"
+                                >
+                                    Samuel Gaborieau
+                                </p>
                             </li>
                             <li>
-                                <p>Philippe Mai</p>
+                                <p
+                                    data-tip="developpeur front-end"
+                                >
+                                    Philippe Mai
+                                </p>
                             </li>
                             <li>
-                                <p>Audrey Donjon</p>
+                                <p
+                                    data-tip="developpeur front-end"
+                                >
+                                    Audrey Donjon
+                                </p>
                             </li>
                             <li>
-                                <p>Pierre Laurent Volot</p>
+                                <p
+                                    data-tip="developpeur back-end"
+                                >
+                                    Pierre Laurent Volot
+                                </p>
                             </li>
                         </ul>
                     </h2>
@@ -105,7 +126,7 @@ export default class Kinogi extends VeniVediKinogi {
                 <section class="outpoint" id="outpoint">
                   
                     <h2>
-                        Point de sortie du <b>Hackathon</b>
+                        Veni Vedi <b>Kinogi</b>
                     </h2>
                     
                     <aside>
@@ -128,6 +149,8 @@ export default class Kinogi extends VeniVediKinogi {
                     </aside>
 
                 </section>
+
+                <ReactToolTip type={this.context.tip} />
 
             </article>
             

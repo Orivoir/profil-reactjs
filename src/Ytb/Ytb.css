@@ -13,6 +13,9 @@
 .ytb-integrate iframe {
 
     width: 85%;
+    margin: auto;
+    width: 90%;
+    height: 60vh ;
 }
 
 .ytb-integrate.dark {

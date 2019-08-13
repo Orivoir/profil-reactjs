@@ -72,3 +72,12 @@
     justify-content: space-around;
     font-size: .85rem;
 }
+
+.kinogi section.devs h2 ul li p {
+
+    user-select: none;
+    -webkit-user-select: none;
+    -ie-user-select: none;
+    -o-user-select: none;
+    cursor: default;
+}

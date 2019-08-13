@@ -5,7 +5,7 @@
     display: flex;
 }
 
-.wrap-nav-items ul li section {
+.wrap-nav-items ul li {
 
     position: relative;
 }
@@ -89,43 +89,37 @@ section aside figure figcaption p a:hover::before {
     animation: underlineMiddle .28s linear forwards;
 }   
 
-.wrap-nav-items ul li section.hackathon::before {
+.wrap-nav-items ul li.hackathon::after {
 
-    background-color: rgba(29, 161, 242,.85) ;
+    background-color: rgb(29, 161, 242) ;
     background-image: url("./hackathon.png") ;
     background-repeat: no-repeat;
     background-position: center center;
     transition: .3s linear;
     z-index: 999999;
 }
-.wrap-nav-items ul li section.hackathon::before {
 
-    background-color: rgba(29, 161, 242,.85) ;
-    background-image: url("./hackathon.png") ;
-}
+.wrap-nav-items ul li.tools-web-dev::after {
 
-.wrap-nav-items ul li section.tools-web-dev::before {
-
-    background-color: rgba(241, 224, 90, .85) ;
+    background-color: rgb(241, 224, 90) ;
     background-image: url("./banch-git.png") ;
     background-size: contain;
 }
 
-.wrap-nav-items ul li section.wf3::before {
+.wrap-nav-items ul li.wf3::after {
 
     background-color: #262b44 ;
     background-image: url("./wf3.png") ;
     background-size: contain;
 }
 
-.wrap-nav-items ul li section:hover::before {
+.wrap-nav-items ul li:hover::after {
 
     content: '' ;
-    width: 0;
-    height: 0;
+    transform: scale(0) ;
 }
 
-.wrap-nav-items ul li section::before {
+.wrap-nav-items ul li::after {
 
     content: '' ;
 

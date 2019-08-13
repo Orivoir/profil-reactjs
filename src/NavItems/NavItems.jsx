@@ -33,7 +33,7 @@ export default class NavItems extends React.Component {
             >
                 <ReactTooltip type={ this.context.type } />
                 <ul>
-                    <li className="nav-item">
+                    <li className="nav-item hackathon">
                       
                         <section className="banner-nav-item hackathon">
 
@@ -87,7 +87,7 @@ export default class NavItems extends React.Component {
 
                     </li>
                     
-                    <li className="nav-item">
+                    <li className="nav-item tools-web-dev">
                         
                         <section className="banner-nav-item tools-web-dev">
                             
@@ -128,7 +128,7 @@ export default class NavItems extends React.Component {
 
                     </li>
                     
-                    <li className="nav-item">
+                    <li className="nav-item wf3">
                     
                         <section className="banner-nav-item wf3">
 

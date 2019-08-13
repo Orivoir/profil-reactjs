@@ -1,6 +1,7 @@
 import React from 'react';
 import {Theme} from './../Theme' ;
 import './Ytb.css';
+import Iframe from 'react-iframe' ;
 
 export default class Ytb extends React.Component {
     
@@ -8,10 +9,11 @@ export default class Ytb extends React.Component {
 
     render() {
 
-        const { tip , src , title } = this.props ;
+        const { id , tip , src , title } = this.props ;
 
         return(
             <section
+                id={id}
                 className={`
                     ${this.context.theme}
                     ytb-integrate
@@ -23,12 +25,13 @@ export default class Ytb extends React.Component {
                     <h2>{title}</h2>
                 }
 
-                <iframe
+                <Iframe
                     width="560"
-                    height="315"
+                    height="420"
                     src={src}
                     frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    position="relative"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                 />
 
