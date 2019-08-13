@@ -192,7 +192,7 @@ section aside figure figcaption p a:hover::before {
 
 .wrap-nav-items.alternate ul li::before {
 
-    background: rgba( 0,0,0,.7);
+    background: rgba(234, 128, 252, .5);
 }
 
 

@@ -21,6 +21,10 @@
 .dragger .dragger-item span {
 
     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ie-user-select: none;
 }
 
 .light .dragger {
