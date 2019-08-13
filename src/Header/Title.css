@@ -125,7 +125,7 @@
 
 .alternate blockquote {
 
-    color: #38ada9 ;
+    color: #ea80fc ;
 }
 
 .alternate #wrap-title h1::before {
@@ -137,7 +137,7 @@
 
 .alternate #wrap-title blockquote::before {
     
-    background:  #b71540 ;
+    background:  #27ae60 ;
     top: 0;
 }
 

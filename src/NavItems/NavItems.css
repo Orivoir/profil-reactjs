@@ -52,53 +52,6 @@
     
 }
 
-/**
-* dark style theme
-*/
-.wrap-nav-items.dark ul li div.title-banner a:hover {
-
-    background: rgba( 255,255,255,.15 ) ;
-}
-
-.wrap-nav-items.dark ul li h2 {
-    color: #fff;
-}
-
-.wrap-nav-items.dark ul li {
-
-    margin: 45px 1.2vh;
-    background: rgba( 0,0,0,.7);
-}
-
-.wrap-nav-items.dark ul li::before {
-
-    background: rgba( 255,255,255,.7);
-}
-
-/**
-* light style theme
-*/
-.wrap-nav-items.light ul li div.title-banner a:hover {
-
-    background: rgba( 0,0,0,.15 ) ;
-}
-
-.wrap-nav-items.light ul li h2 {
-    color: rgb(35,35,35);
-}
-
-.wrap-nav-items.light ul li {
-
-    margin: 45px 1.2vh;
-    background: rgb(255, 255, 255 , .7 );
-}
-
-.wrap-nav-items.light ul li::before {
-
-    background: rgba( 0,0,0,.7);
-}
-
-
 
 section.hackathon aside figure figcaption p a {
     
@@ -170,6 +123,78 @@ section aside figure figcaption p a:hover::before {
     background-position: center center;
     transition: .3s linear;
 }
+.wrap-nav-items ul li {
+
+    margin: 45px 1.2vh;
+
+}
+
+/**
+* dark style theme
+*/
+.wrap-nav-items.dark ul li div.title-banner a:hover {
+
+    background: rgba( 255,255,255,.15 ) ;
+}
+
+.wrap-nav-items.dark ul li h2 {
+    color: #fff;
+}
+
+.wrap-nav-items.dark ul li {
+
+    background: rgba( 0,0,0,.7);
+}
+
+.wrap-nav-items.dark ul li::before {
+
+    background: rgba( 255,255,255,.7);
+}
+
+/**
+* light style theme
+*/
+.wrap-nav-items.light ul li div.title-banner a:hover {
+
+    background: rgba( 0,0,0,.15 ) ;
+}
+
+.wrap-nav-items.light ul li h2 {
+    color: rgb(35,35,35);
+}
+
+.wrap-nav-items.light ul li {
+
+    background: rgb(255, 255, 255 , .7 );
+}
+
+.wrap-nav-items.light ul li::before {
+
+    background: rgba( 0,0,0,.7);
+}
+
+/**
+* alternate style theme
+*/
+.wrap-nav-items.alternate ul li div.title-banner a:hover {
+
+    background: rgb(51, 41, 64, .15) ;
+}
+
+.wrap-nav-items.alternate ul li h2 {
+    color: #fff;
+}
+
+.wrap-nav-items.alternate ul li {
+
+    background: linear-gradient(22.5deg , #ff7700 , #da583b);
+}
+
+.wrap-nav-items.alternate ul li::before {
+
+    background: rgba( 0,0,0,.7);
+}
+
 
 /**
 * responsive style
