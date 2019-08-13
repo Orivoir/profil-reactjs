@@ -55,6 +55,10 @@ html , body , #root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+}
+
+html {
+
   overflow-x:  hidden;
 }
 
