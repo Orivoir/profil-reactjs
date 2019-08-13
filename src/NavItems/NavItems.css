@@ -1,8 +1,16 @@
+/**
+* global style theme (align , dim , position , box model , transition , ... )
+*/
 .wrap-nav-items ul {
     
     padding: 0;
     position: relative;
     display: flex;
+}
+
+.wrap-nav-items li {
+
+    transition: .3s linear;
 }
 
 .wrap-nav-items ul li {
@@ -27,14 +35,9 @@
     padding: 1.5vh 2.5vh;
     transition: .35s linear background;
 }
-.wrap-nav-items ul li div.title-banner a:hover {
-
-    background: rgba( 30,30,54,.15 ) ;
-}
 
 .wrap-nav-items ul li h2 {
     margin: 0;
-    color: #fff;
     font-weight: 600;
 }
 
@@ -49,6 +52,18 @@
     
 }
 
+/**
+* dark style theme
+*/
+.wrap-nav-items.dark ul li div.title-banner a:hover {
+
+    background: rgba( 255,255,255,.15 ) ;
+}
+
+.wrap-nav-items.dark ul li h2 {
+    color: #fff;
+}
+
 .wrap-nav-items.dark ul li {
 
     margin: 45px 1.2vh;
@@ -58,6 +73,29 @@
 .wrap-nav-items.dark ul li::before {
 
     background: rgba( 255,255,255,.7);
+}
+
+/**
+* light style theme
+*/
+.wrap-nav-items.light ul li div.title-banner a:hover {
+
+    background: rgba( 0,0,0,.15 ) ;
+}
+
+.wrap-nav-items.light ul li h2 {
+    color: rgb(35,35,35);
+}
+
+.wrap-nav-items.light ul li {
+
+    margin: 45px 1.2vh;
+    background: rgb(255, 255, 255 , .7 );
+}
+
+.wrap-nav-items.light ul li::before {
+
+    background: rgba( 0,0,0,.7);
 }
 
 
@@ -133,12 +171,9 @@ section aside figure figcaption p a:hover::before {
     transition: .3s linear;
 }
 
-
-.wrap-nav-items li {
-
-    transition: .3s linear;
-}
-
+/**
+* responsive style
+*/
 @media screen and (max-width: 1100px) {
 
     .wrap-nav-items ul {
@@ -152,12 +187,12 @@ section aside figure figcaption p a:hover::before {
     }
 
     
-    .wrap-nav-items.dark ul li {
+    .wrap-nav-items ul li {
 
         margin: 15px 0;
     }
 
-    .wrap-nav-items.dark ul li figure {
+    .wrap-nav-items ul li figure {
 
         text-align: center;
     }
