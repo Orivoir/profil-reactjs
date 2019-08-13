@@ -34,3 +34,13 @@
 
     color: #00cec9;
 }
+
+#how-are-you.alternate {
+    
+    color: #fff;
+    background: rgba(51, 41, 64 , .9);
+}
+#how-are-you.alternate p a {
+
+    color: #ea80fc;
+}

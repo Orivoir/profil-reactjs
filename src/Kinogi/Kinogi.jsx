@@ -1,9 +1,7 @@
 import React from 'react';
 import {Theme} from './../Theme' ;
 import './Kinogi.css';
-import {Figcaption as Figc} from './Figcaption' ;
-import ReactToolTip from 'react-tooltip';
-
+import { Figcaption as Figc } from './Figcaption';
 
 const VeniVediKinogi = React.Component ; // 😎 
 
@@ -139,9 +137,6 @@ export default class Kinogi extends VeniVediKinogi {
                     </aside>
 
                 </section>
-
-                <ReactToolTip type={this.context.tip} />
-
             </article>
             
         ) ;
