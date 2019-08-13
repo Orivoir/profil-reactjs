@@ -26,6 +26,17 @@
     color: #fff;
 }
 
+.alternate .kinogi section figure figcaption {
+
+    background: rgba(234, 128, 252, .18) ;
+    color: #fff;
+}
+
+#kinogi.alternate {
+    background: linear-gradient( to left  , #da583b , #ff7700 ) ;
+    color: rgb( 35,35,35 );
+}
+
 .kinogi section h2 {
 
     text-align: center;

@@ -24,6 +24,11 @@
     background: rgba( 255,255,255 , .8 );
 }
 
+.ytb-integrate.alternate {
+
+    background: linear-gradient( to left  , #da583b , #ff7700 ) ;
+}
+
 
 .ytb-integrate.light h2 {
 
