@@ -5,10 +5,25 @@
 }
 
 
+.dark .kinogi section figure figcaption {
+
+    background: rgba(0,0,0,.65);
+}
 
 #kinogi.dark {
 
     background: rgba( 255,255,255,.8 );
+}
+
+.light .kinogi section figure figcaption {
+
+    background: rgba(255,255,255,.35);
+}
+
+#kinogi.light {
+
+    background: rgba( 0,0,0,.8 );
+    color: #fff;
 }
 
 .kinogi section h2 {
@@ -24,9 +39,9 @@
     position: relative;
     overflow: hidden;
 }
+
 .kinogi section figure figcaption {
  
-    background: rgba(0,0,0,.65);
     color: #fff;
     padding: 2vh;
     z-index: 9999 ;

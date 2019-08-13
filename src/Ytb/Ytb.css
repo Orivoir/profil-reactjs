@@ -23,3 +23,14 @@
 
     background: rgba( 255,255,255 , .8 );
 }
+
+
+.ytb-integrate.light h2 {
+
+    color: #fff;
+}
+
+.ytb-integrate.light {
+
+    background: rgba( 0,0,0 , .8 );
+}
