@@ -33,7 +33,7 @@ export default class Navbar extends React.Component {
     }
 
     componentDidMount() {
-        
+
         window.addEventListener( 'scroll' , this.scrollAction ) ;
 
     }

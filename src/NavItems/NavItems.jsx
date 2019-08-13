@@ -62,6 +62,7 @@ export default class NavItems extends React.Component {
                                             <a
 
                                                 target="_blank"
+                                                rel="noopener noreferrer"
                                                 href="https://twitter.com/WebForce3/status/1003554210254901249"
                                                 data-tip="lire sur twitter ?"
                                             >

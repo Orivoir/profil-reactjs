@@ -25,6 +25,7 @@ export default class Footer extends React.Component {
                         <a 
                             data-tip="contribuer au projet open source ?"
                             target="_blank"
+                            rel="noopener noreferrer"
                             href="https://github.com/Orivoir/profil-reactjs"
                         >
                             <FontAwesomeIcon

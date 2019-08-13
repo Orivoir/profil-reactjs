@@ -9,7 +9,7 @@ export default class Ytb extends React.Component {
 
     render() {
 
-        const { id , tip , src , title } = this.props ;
+        const { id , src , title } = this.props ;
 
         return(
             <section

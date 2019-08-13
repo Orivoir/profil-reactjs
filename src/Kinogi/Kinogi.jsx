@@ -2,18 +2,8 @@ import React from 'react';
 import {Theme} from './../Theme' ;
 import './Kinogi.css';
 import {Figcaption as Figc} from './Figcaption' ;
-
-/**
-* git expemples repository :  
-* <https://github.com/FortAwesome/react-fontawesome/blob/master/examples/create-react-app/src/App.js#L63>
-* Font icons (svg) react lib
-*/
-import { library } from '@fortawesome/fontawesome-svg-core' ;
-import { fab } from '@fortawesome/free-brands-svg-icons' ;
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ReactToolTip from 'react-tooltip';
 
-library.add( fab ) ;
 
 const VeniVediKinogi = React.Component ; // 😎 
 

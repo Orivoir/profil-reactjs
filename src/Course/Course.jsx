@@ -29,7 +29,6 @@ export default class Course extends React.Component {
 
                         <Ytb
                             id="get-started"
-                            tip="hackathon résumé des projets"
                             src="https://www.youtube.com/embed/SntWoxaM5S0"
                             title="Hackathon <WebForce3 /> Bourgogne 03/06/18"
                         />
