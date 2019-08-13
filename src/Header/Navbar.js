@@ -22,8 +22,6 @@ export default class Navbar extends React.Component {
             navbar = document.querySelector('header nav') ,
             mainTitle = document.querySelector('header #wrap-title')
         ;
-
-        console.log('here');
         
         if( pageY > mainTitle.offsetHeight ) {
 

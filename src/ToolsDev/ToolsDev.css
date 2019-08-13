@@ -1,0 +1,104 @@
+article#tools-dev section {
+
+    user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ie-user-select: none;
+    transition: .12s linear left;
+    position: relative;
+    margin: 4vh 0;
+    padding: 2vh 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+article#tools-dev section.hide {
+
+    display: none!important;
+}
+
+article#tools-dev section.reversed {
+
+    flex-direction: row-reverse ;
+}
+
+article#tools-dev aside {
+
+    width: 50%;
+    margin: auto 2.5vh;
+}
+
+article#tools-dev .content {
+    margin: auto 2.5vh;
+}
+
+article#tools-dev section .wrap-title {
+
+    text-align: center;
+}
+
+article#tools-dev section .wrap-title h2 {
+
+    font-weight: 600;
+}
+
+article#tools-dev section p {
+    
+    line-height: 1.8rem;
+    letter-spacing: .15rem;
+}
+
+@keyframes movable {
+
+    from {
+
+        background-image: url("./dragger.svg") ;
+        left: 10% ;
+    }
+
+    25% {
+        
+        background-image: url("./dragger.svg") ;
+        left: 5%
+    }
+
+    50% {
+        
+        background-image: url("./dragger.svg") ;
+        left: 10%;
+    }
+
+    75% {
+        
+        background-image: url("./dragger.svg") ;
+        left: 15%;
+    }
+
+    to {
+        
+        background-image: url("./dragger.svg") ;
+        left: 10%;
+    }
+} 
+
+article#tools-dev section.reactjs::before {
+    
+    content:'';
+    position: absolute;
+
+    width: 13vh;
+    height: 13vh;
+    min-width: 45px;
+    min-height: 45px;
+
+    background-size: cover;
+    left: 10% ;
+    top: .5vh;
+    animation: movable 1s linear 3; 
+}
+
+
+article.dark#tools-dev section {
+
+    background: rgba(255,255,255,.72);
+}
+
