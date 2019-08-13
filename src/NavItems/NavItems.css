@@ -87,7 +87,7 @@ section aside figure figcaption p a:hover::before {
     background-repeat: no-repeat;
     background-position: center center;
     transition: .3s linear;
-    z-index: 999999;
+    /* z-index: 999999; */
 }
 
 .wrap-nav-items ul li.tools-web-dev::after {

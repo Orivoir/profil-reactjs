@@ -1,5 +1,6 @@
 .cookie-banner {
 
+    z-index: 999999999;
     background: rgb(0,0,0,.85);
     position: fixed;
     bottom: 0;
