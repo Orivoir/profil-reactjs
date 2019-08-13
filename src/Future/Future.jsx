@@ -4,6 +4,7 @@ import DocumentTitle from 'react-document-title';
 import Main from './../Main/Main' ;
 import {Theme} from './../Theme' ;
 import ToolsDev from './../ToolsDev/ToolsDev';
+import WF3 from './../WF3/WF3';
 
 export default class Future extends React.Component {
     
@@ -12,7 +13,7 @@ export default class Future extends React.Component {
     render() {
  
         return (
-            <DocumentTitle title="future">
+            <DocumentTitle title="web étudiant">
                 <>
                     <Header />
 
@@ -22,15 +23,17 @@ export default class Future extends React.Component {
                                 [
                                     { path: "#abc", name:"get started" } ,
                                     { path: "#tools-dev", name:"outils dev" } ,
-                                    { path: "#wf3", name:"WebForce3" }
+                                    { path: "#wf3", name:"WebForce3" } ,
+                                    { path: "#certif-integ", name:"Intégration" } ,
+                                    { path: "#certif-dev", name:"Développement" }
                                 ]
                             }
                         >
                         
                             {/* Write future content here */}
-
                             <ToolsDev />
-                        
+                            <WF3 />
+
                     </Main>
                 </>
             </DocumentTitle>

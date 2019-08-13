@@ -38,7 +38,7 @@ export default class HowAreYou extends React.Component {
                 <p>
                     Samuel Gaborieau {yearOld} ans développeur web&nbsp;
                     <b>
-                        <span data-tip="développeur front-ent et back-end">
+                        <span data-tip="développeur front-end et back-end">
                             fullstack
                         </span>
                         &nbsp;

@@ -14,7 +14,7 @@ export default class Course extends React.Component {
     render() {
 
         return (
-            <DocumentTitle title="course">
+            <DocumentTitle title="hackathon">
                 <>
                     <Header />
                     
