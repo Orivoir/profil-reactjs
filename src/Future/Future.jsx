@@ -21,7 +21,8 @@ export default class Future extends React.Component {
                             anchors={
                                 [
                                     { path: "#abc", name:"get started" } ,
-                                    { path: "#tools-dev", name:"outils dev" }
+                                    { path: "#tools-dev", name:"outils dev" } ,
+                                    { path: "#wf3", name:"WebForce3" }
                                 ]
                             }
                         >

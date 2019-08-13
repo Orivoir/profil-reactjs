@@ -51,31 +51,31 @@ article#tools-dev section p {
 
     from {
 
-        background-image: url("./dragger.svg") ;
+        background-image: url("./draggerLight.svg") ;
         left: 10% ;
     }
 
     25% {
         
-        background-image: url("./dragger.svg") ;
+        background-image: url("./draggerLight.svg") ;
         left: 5%
     }
 
     50% {
         
-        background-image: url("./dragger.svg") ;
+        background-image: url("./draggerLight.svg") ;
         left: 10%;
     }
 
     75% {
         
-        background-image: url("./dragger.svg") ;
+        background-image: url("./draggerLight.svg") ;
         left: 15%;
     }
 
     to {
         
-        background-image: url("./dragger.svg") ;
+        background-image: url("./draggerLight.svg") ;
         left: 10%;
     }
 } 
@@ -100,5 +100,34 @@ article#tools-dev section.reactjs::before {
 article.dark#tools-dev section {
 
     background: rgba(255,255,255,.72);
+}
+
+article.dark#tools-dev section a {
+
+    color: #30336b;
+}
+
+article.light#tools-dev section a {
+
+    color: #00cec9;
+
+}
+
+article.light#tools-dev section {
+
+    background: rgba(35,35,35,.85);
+    color: #fff;
+}
+
+article.alternate#tools-dev section a {
+
+    color: #ea80fc;
+
+}
+
+article.alternate#tools-dev section {
+
+    background: rgba(51, 41, 64 , .9) ;
+    color: #fff ;
 }
 
