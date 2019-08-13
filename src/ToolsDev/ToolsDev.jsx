@@ -32,6 +32,9 @@ export default class ToolsDev extends React.Component {
     currentUp( e ) {
 
         const section = document.querySelector('#tools-dev section[data-current="true"]');
+
+        if( !section ) return ;
+
         section.style.left = "0px" ;
 
         if( this.state.position > 55 || this.state.position < -55 ) {
@@ -69,6 +72,8 @@ export default class ToolsDev extends React.Component {
                 section = document.querySelector('#tools-dev section[data-current="true"]') ;
             ;
 
+            if( !section ) return ;
+
             if( (this.state.position < -55 && e.movementX < 0 ) || (this.state.position > 55 && e.movementX > 0 ) ) {
 
                 section.style.opacity = '.5' ;
@@ -103,6 +108,8 @@ export default class ToolsDev extends React.Component {
         const
             section = document.querySelector('#tools-dev section[data-current="true"]') ;
         ;
+
+        if( !section ) return ;
 
         section.addEventListener('mousedown' , this.currentDown ) ;
         document.addEventListener('mouseup' , this.currentUp ) ;
