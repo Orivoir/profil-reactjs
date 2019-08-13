@@ -125,12 +125,12 @@
 
 .alternate #navbar {
 
-    background: linear-gradient( to left  , #c23616 , #ff7700 ) ;
+    background: linear-gradient( to left  , #da583b , #ff7700 ) ;
 }
 
 .alternate #navbar ul li a {
 
-    color: #273c75;
+    color: #332940;
     font-weight: 600;
 }
 .alternate #navbar ul li:hover {
@@ -139,11 +139,11 @@
 }
 .alternate #navbar ul li a.current {
 
-    color: #30336b;
+    color: #332940;
 }
 
 .alternate #navbar ul li a:hover::before {
-    background: #30336b;
+    background:#332940;
 }
 
 
@@ -152,7 +152,7 @@
     content: '';
     position: absolute;
     height: .85vh;
-    background: #30336b;
+    background: #332940;
     width: 100%;
     left: 0;
     top: calc( 100% + 2vh - .85vh );

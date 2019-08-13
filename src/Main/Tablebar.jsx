@@ -51,7 +51,7 @@ export default class Tablebar extends React.Component {
 
         const
             { onReversed , anchors , status } = this.props ,
-            iconColor = "#" + ( this.context.theme === 'light' ? "bdc3c7" : ( this.context.theme === 'dark' ? "2c3e50" : "27ae60" ) ) ,
+            iconColor = "#" + ( this.context.theme === 'light' ? "bdc3c7" : ( this.context.theme === 'dark' ? "2c3e50" : "332940" ) ) ,
             anchorsComponent = ( anchors instanceof Array && anchors.length ) ? (
                 <>
                     {/* reverse button */}

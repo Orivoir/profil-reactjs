@@ -38,10 +38,10 @@ ul.anchors-list li a {
 
 .alternate ul.anchors-list li a {
 
-    color: rgb(39, 174, 96);
+    color: #332940;
 }
 
 .alternate ul.anchors-list li:hover {
 
-    background: rgba(142, 68, 173, .18) ;
+    background: rgba(51, 41, 64, .2) ;
 }

@@ -81,6 +81,9 @@
     background: rgb(35,35,35) ;
 }
 
+/**
+* style theme dark
+*/
 .dark #wrap-title h1 {
 
     
@@ -105,10 +108,13 @@
     top: 0;
 }
 
+/**
+* style theme alternate
+*/
 .alternate #wrap-title {
 
     
-    background: #8e44ad ;
+    background: #332940 ;
 }
 
 .alternate #wrap-title h1 {
