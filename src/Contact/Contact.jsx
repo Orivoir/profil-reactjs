@@ -2,6 +2,7 @@ import React from 'react';
 import * as firebase from 'firebase';
 import {Theme} from './../Theme' ;
 import './Contact.css';
+import firebaseImg from './firebase.png';
 import firebaseConfig from './../firebase.config' ;
 
 export default class Contact extends React.Component {
@@ -10,10 +11,12 @@ export default class Contact extends React.Component {
 
     state = {
 
+        textarea: "Bonjour ..." ,
         firebase: {
             db: null ,
             contact: null ,
             data: [] ,
+            status: null
         }
 
     } ;
@@ -23,10 +26,21 @@ export default class Contact extends React.Component {
         super(props) ;
 
         this.actionContact = this.actionContact.bind( this ) ;
+        this.textareaChange = this.textareaChange.bind( this ) ; 
+    }
+
+    
+    /**
+     * @bindMethod [constructor]
+     * @param {SyntheticEvent} e
+     */
+    textareaChange(e) {
+
+        this.setState( { textarea: e.target.value } ) ;
     }
 
     /**
-     * @bindMethod
+     * @bindMethod [constructor]
      * @param {SyntheticEvent} e
      * @param {string} email
      * @param {string} content
@@ -49,6 +63,23 @@ export default class Contact extends React.Component {
                 dateAt: Date.now()
             } ).then( () => {
 
+                this.setState({firebase: {
+                    status: (<div className="send-status success">
+                        <p>
+                          message envoyé avec succés stocké sur&nbsp;
+                          <a  href="https://fr.wikipedia.org/wiki/Firebase">
+                              <img
+                                src={firebaseImg}
+                                width="25"
+                                height="25"
+                                alt="logo firebase"
+                              />&nbsp;
+                              firebase
+                          </a>
+                        </p>
+                    </div>)
+                }
+            }) ;
                 // Data save with success ;
             } )
             .catch( e => {
@@ -83,10 +114,15 @@ export default class Contact extends React.Component {
                 className={`contact ${this.context.theme}`}
             >
 
-                <form onSubmit={e => {
-                    e.preventDefault() ;
-                    this.actionContact( e , e.target['email'].value , e.target['content'].value ) ;
-                }  }>
+                <h2>Me Contacté</h2>
+
+                <form
+                    className={`${this.state.firebase.status ? 'hide' : ''}`} 
+                    onSubmit={e => {
+                        e.preventDefault() ;
+                        this.actionContact( e , e.target['email'].value , e.target['content'].value ) ;
+                    }  }
+                >
 
                     <div>
                         <label htmlFor="email">Email</label>
@@ -95,14 +131,22 @@ export default class Contact extends React.Component {
                     
                     <div>
                         <label htmlFor="content">contenu</label>
-                        <textarea type="text" id="content" name="content" value="Bonjour ..." />
+                        <textarea
+                            type="text"
+                            id="content"
+                            name="content"
+                            value={this.state.textarea}
+                            onChange={this.textareaChange}    
+                        />
                     </div>
 
                     <div>
                         <button type="submit">envoyer</button>
                     </div>
 
+
                 </form>
+                {this.state.firebase.status}
 
             </section>
         ) ;
