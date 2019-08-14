@@ -168,6 +168,12 @@ section aside figure figcaption p a:hover::before {
     background: rgb(255, 255, 255 , .7 );
 }
 
+
+.wrap-nav-items.light ul li section figcaption p a {
+
+    color: rgb(35,35,35);
+}
+
 .wrap-nav-items.light ul li::before {
 
     background: rgba( 0,0,0,.7);

@@ -23,7 +23,7 @@ export default class Kinogi extends VeniVediKinogi {
                 id="kinogi"
             >
 
-                <section class="present" >
+                <section className="present" >
 
                     <h2>
                         Le projet <b>Kinogi</b> est la rencontre entre "la gazette d'Harry Potter" et un cadre photo numérique connecté !
@@ -49,7 +49,7 @@ export default class Kinogi extends VeniVediKinogi {
 
                 </section>
 
-                <section class="devs" id="devs" >
+                <section className="devs" id="devs" >
                     <h2>
                         L'équipe de développeurs du projet
                         <ul>
@@ -111,7 +111,7 @@ export default class Kinogi extends VeniVediKinogi {
 
                 </section>
 
-                <section class="outpoint" id="outpoint">
+                <section className="outpoint" id="outpoint">
                   
                     <h2>
                         Veni Vedi <b>Kinogi</b>

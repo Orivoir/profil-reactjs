@@ -27,6 +27,7 @@
 
     font-size: 1.15rem;
     font-style: italic;
+    padding-bottom: .75vh;
 }
 
 #wrap-title h1::before , #wrap-title blockquote::before {

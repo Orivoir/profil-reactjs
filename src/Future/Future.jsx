@@ -19,7 +19,7 @@ export default class Future extends React.Component {
                     <Header />
 
                     <Main
-                            // Factory anchors
+                            route="/future"
                             anchors={
                                 [
                                     { path: "#abc", name:"get started" } ,

@@ -4,7 +4,17 @@ import './Main.css' ;
 import Tablebar from './Tablebar' ;
 import CookieBanner from './../CookieBanner/CookieBanner' ;
 import Footer from './../Footer/Footer' ;
+import {HashLink as Link} from 'react-router-hash-link';
+/**
+* git expemples repository :  
+* <https://github.com/FortAwesome/react-fontawesome/blob/master/examples/create-react-app/src/App.js#L63>
+* Font icons (svg) react lib
+*/
+import { library } from '@fortawesome/fontawesome-svg-core' ;
+import { fas } from '@fortawesome/free-solid-svg-icons' ;
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+library.add( fas ) ;
 
 export default class Main extends React.Component {
     
@@ -18,8 +28,8 @@ export default class Main extends React.Component {
     constructor( props ) {
 
         super( props ) ;
-
         this.onChangeReversed = this.onChangeReversed.bind( this ) ;
+        this.scrollAction = this.scrollAction.bind( this ) ; 
     }
 
     /**
@@ -37,6 +47,25 @@ export default class Main extends React.Component {
         ) ) ;
     }
 
+    
+    /**
+     * @bindMethod [constructor]
+     * @param {Event} e 
+     */
+    scrollAction( {pageY} ) {
+
+        const toTop = document.querySelector('.wrap-to-top') ;
+
+        if( !toTop || !(toTop instanceof Node) ) return ;
+
+        toTop
+            .classList[ 
+                ( pageY >= 100  ? 'remove' : 'add')
+            ] ('hide-o')
+        ;
+
+    }
+
     componentDidMount() {
 
         const useCookie = sessionStorage.getItem('useCookie') ;
@@ -46,6 +75,8 @@ export default class Main extends React.Component {
                 cookieBanner: <CookieBanner />
             } ) ;
         }
+        
+        window.addEventListener('scroll' , this.scrollAction ) ;
     }
 
     render() {
@@ -76,8 +107,22 @@ export default class Main extends React.Component {
                         onReversed={this.onChangeReversed}
                     />
 
-                    {this.state.cookieBanner}
+                    <div className="wrap-to-top hide-o">
 
+                        
+                        <Link 
+                            to={ this.props.route + '#header' }
+                        >  
+                            <FontAwesomeIcon
+                                icon={['fas','arrow-alt-circle-up']}
+                                size='2x'
+                                className='icon-to-top'
+                            />
+                        </Link>
+
+                    </div>
+
+                    {this.state.cookieBanner}
 
                 </main>
                 <Footer />

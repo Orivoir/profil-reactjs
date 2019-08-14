@@ -19,7 +19,7 @@ export default class Home extends React.Component {
                     <Header />
 
                     <Main
-                        // Factory anchors
+                        route="/"
                         anchors={
                             [
                                 { path: "/#nav-items", name:"get started" } ,

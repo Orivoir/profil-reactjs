@@ -18,14 +18,17 @@ export default class Course extends React.Component {
                 <>
                     <Header />
                     
-                    <Main anchors={
-                        [
-                            { path: "/course#get-started", name:"get started" } ,
-                            { path: "/course#kinogi", name:"kinogi" } ,
-                            { path: "/course#devs", name:"developpeurs" } ,
-                            { path: "/course#outpoint", name:"Veni Vedi Kinogi" }
-                        ]
-                    }>
+                    <Main
+                        anchors={
+                            [
+                                { path: "/course#get-started", name:"get started" } ,
+                                { path: "/course#kinogi", name:"kinogi" } ,
+                                { path: "/course#devs", name:"developpeurs" } ,
+                                { path: "/course#outpoint", name:"Veni Vedi Kinogi" }
+                            ]
+                        }
+                        route="/course"
+                    >
 
                         <Ytb
                             id="get-started"

@@ -25,7 +25,7 @@ export default class Header extends React.Component {
 
         return (
             
-            <header className={ this.context.theme } >
+            <header id="header" className={ this.context.theme } >
 
                 <Title
                     toggleTheme={ toggleTheme }

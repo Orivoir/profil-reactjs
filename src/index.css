@@ -57,6 +57,45 @@ html , body , #root {
   scroll-behavior: smooth;
 }
 
+/* h1 =>"Lexend Deca" , "Lexend Exa" */
+
+h1 {
+
+  font-family: "Lexend Exa" , "Lexend Deca";
+}
+
+figcaption {
+
+  font-family: "Oswald" ; 
+}
+
+blockquote {
+
+  font-family: "Lexend Zetta" , 'Open Sans Condensed' ;
+}
+
+h2 {
+
+  font-family:  "Source Code Pro" , "Fjalla One" ;
+}
+
+p {
+
+  font-family: "Exo 2" , "Maven Pro" , "Mukta" , sans-serif , serif ;
+}
+
+a {
+
+  font-family: "Monda" ;
+}
+
+nav a {
+
+  font-family: "Righteous" ;
+  letter-spacing: .15rem;
+  font-weight: normal;
+}
+
 html {
 
   overflow-x:  hidden;
