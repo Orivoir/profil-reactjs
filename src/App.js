@@ -8,9 +8,8 @@ import ReactToolTip from 'react-tooltip' ;
 export default class App extends React.Component {
   
   state = {
-    theme: themes.light,
-    tip: themes.dark ,
-    titleDoc: 'home'
+    theme: ( typeof sessionStorage.getItem('theme') === "string"  && /(light|dark|alternate)/.test(sessionStorage.getItem('theme')) ) ? sessionStorage.getItem('theme'): themes.light ,
+    tip: themes.dark
   } ;
 
   constructor( props ) {
@@ -28,6 +27,7 @@ export default class App extends React.Component {
       
       } ) ) ;
 
+      sessionStorage.setItem('theme' , change ) ;
     }
 
   }

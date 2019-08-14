@@ -51,19 +51,19 @@ export default class WF3 extends Code {
                 </p>
 
                 <div id="certif">
-                    <p id="certif-integ">
+                    <div id="certif-integ">
                         <h3>Certification Développement</h3>
                         <Iframe
                             src={ dev }
                         />
-                    </p>
+                    </div>
 
-                    <p id="certif-dev">
+                    <div id="certif-dev">
                         <h3>Certification Intégration</h3>
                         <Iframe
                             src={ integ }
                         />
-                    </p>
+                    </div>
                 
                 </div>
 
