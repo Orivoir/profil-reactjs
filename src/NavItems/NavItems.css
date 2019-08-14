@@ -226,9 +226,10 @@ section aside figure figcaption p a:hover::before {
 
 @media screen and (max-width: 700px) {
 
-    .wrap-nav-items ul li aside {
+    .wrap-nav-items ul li aside figure img {
 
-        display: none;
+        width: 25vh;
+        height: auto;
     }
 
     .wrap-nav-items ul li section.hackathon::before {
@@ -240,6 +241,17 @@ section aside figure figcaption p a:hover::before {
 
 @media screen and (max-width: 575px) {
     
+    .wrap-nav-items ul li aside {
+
+        display: none;
+
+    }
+
+    .wrap-nav-items ul li::after {
+
+        display: none;
+    }
+
     .wrap-nav-items {
         
         width: 85%;

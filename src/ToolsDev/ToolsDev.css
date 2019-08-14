@@ -131,3 +131,20 @@ article.alternate#tools-dev section {
     color: #fff ;
 }
 
+@media screen and (max-width:1250px) {
+
+    article#tools-dev section {
+
+        flex-direction: column;
+    }
+    article#tools-dev aside {
+        width:95%;
+        margin: auto;
+    }
+
+    article#tools-dev aside img {
+
+        display: inline-block;
+        width: 100%;
+    }
+}
