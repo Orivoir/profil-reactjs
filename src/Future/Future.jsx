@@ -5,6 +5,7 @@ import Main from './../Main/Main' ;
 import {Theme} from './../Theme' ;
 import ToolsDev from './../ToolsDev/ToolsDev';
 import WF3 from './../WF3/WF3';
+import Contact from './../Contact/Contact' ;
 
 export default class Future extends React.Component {
     
@@ -31,9 +32,12 @@ export default class Future extends React.Component {
                         >
                         
                             {/* Write future content here */}
+                            
                             <ToolsDev />
+                            
                             <WF3 />
-
+                            
+                            <Contact />
                     </Main>
                 </>
             </DocumentTitle>

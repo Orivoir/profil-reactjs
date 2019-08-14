@@ -1,0 +1,66 @@
+#contact {
+
+    padding: 4vh;
+    margin: 6vh 0;
+}
+
+#contact.light {
+
+    background: rgba(35,35,35,.7);
+}
+
+#contact.light ,
+#contact.light form input ,
+#contact.light form textarea ,
+#contact.light form button {
+
+    color: #fff;
+}
+
+
+#contact.light form input {
+
+    border-color: #fff;
+}
+
+#contact form label {
+
+    text-align: center;
+    display: block;
+}
+
+#contact form div {
+
+    margin: 3vh;
+}
+
+
+#contact form textarea {
+
+    resize: none;
+}
+
+#contact form input , #contact form textarea {
+
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+#contact form input {
+
+    height: 6vh;
+    border-bottom: 2px solid transparent;
+}
+
+#contact form button {
+
+    padding: 2vh 4vh;
+    width: 100%;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
