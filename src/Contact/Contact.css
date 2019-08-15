@@ -4,6 +4,52 @@
     margin: 6vh 0;
 }
 
+#contact.alternate {
+
+    background: rgba(51, 41, 64 , .9);
+    color: #fff;
+}
+
+#contact.alternate form button {
+
+
+    background: linear-gradient(#ff7700 , #da583b) ;
+    color: rgba(51, 41, 64 , 1);
+
+}
+
+#contact.alternate form button:hover {
+
+    background: transparent;
+    color: #ff7700;
+    border-color: #ff7700;
+}
+
+#contact.dark {
+
+    background: rgba(255,255,255,.7);
+}
+
+
+#contact.dark form input , 
+#contact.dark form textarea {
+
+    border-color: #000;
+}
+
+#contact.dark form button {
+
+    background: rgba(35,35,35.75);
+    color: #fff;
+}
+
+#contact.dark form button:hover {
+
+    background: transparent;
+    color: #000;
+    border-color: #000;
+}
+
 #contact.light {
 
     background: rgba(35,35,35,.7);
@@ -12,26 +58,25 @@
 #contact.light ,
 #contact.light form input ,
 #contact.light form textarea ,
-#contact.light form button {
+#contact.light form button
+#contact.alternate ,
+#contact.alternate form input ,
+#contact.alternate form textarea
+
+{
 
     color: #fff;
 }
 
 
-#contact.light form input {
+#contact.light form input,
+#contact.light form textarea,
+#contact.alternate form input,
+#contact.alternate form textarea
+
+{
 
     border-color: #fff;
-}
-
-#contact.light form textarea {
-
-    border-color: #fff;
-}
-
-#contact.light form button {
-
-    background: rgba(255,255,255.75);
-    color: rgb(35,35,35);
 }
 
 #contact.light form button {
@@ -105,7 +150,7 @@
     color: #00cec9;
 }
 
-#contact.light .send-status.error {
+#contact .send-status.error {
 
     color: #fff;
     background: #db0e30;
@@ -115,7 +160,7 @@
     font-weight: 700;
 }
 
-#contact.light .send-status.error::before {
+#contact .send-status.error::before {
 
     content: '⚠️ ';
 }
