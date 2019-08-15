@@ -105,6 +105,21 @@
     color: #00cec9;
 }
 
+#contact.light .send-status.error {
+
+    color: #fff;
+    background: #db0e30;
+    border-radius: 6px;
+    user-select: none;
+    -webkit-user-select: none;
+    font-weight: 700;
+}
+
+#contact.light .send-status.error::before {
+
+    content: '⚠️ ';
+}
+
 .hide {
 
     display: none;

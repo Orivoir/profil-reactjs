@@ -16,7 +16,8 @@ export default class Contact extends React.Component {
             db: null ,
             contact: null ,
             data: [] ,
-            status: null
+            status: null ,
+            send: false
         }
 
     } ;
@@ -54,8 +55,22 @@ export default class Contact extends React.Component {
         if( !contact ) {
 
             console.error( 'firebase state null' );
+            return ;
 
         } else {
+
+            if( email.length < 8 || content.length < 5  ) {
+
+                this.setState({firebase: {
+                        status: (<div className="send-status error">
+                            <p>
+                            données invalide vérifié les champs saisie
+                            </p>
+                        </div>)
+                    }
+                }) ;
+                return ;
+            }
 
             contact.add( {
                 email: email , 
@@ -77,7 +92,8 @@ export default class Contact extends React.Component {
                               firebase
                           </a>
                         </p>
-                    </div>)
+                    </div>) ,
+                    send: true
                 }
             }) ;
                 // Data save with success ;
@@ -117,7 +133,7 @@ export default class Contact extends React.Component {
                 <h2>Me Contacté</h2>
 
                 <form
-                    className={`${this.state.firebase.status ? 'hide' : ''}`} 
+                    className={`${this.state.firebase.send ? 'hide' : ''}`} 
                     onSubmit={e => {
                         e.preventDefault() ;
                         this.actionContact( e , e.target['email'].value , e.target['content'].value ) ;
