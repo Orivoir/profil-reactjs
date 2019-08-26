@@ -1,0 +1,138 @@
+.portfolio ul {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio {
+    
+    padding: 3vh 0;
+}
+.portfolio.light {
+
+    background: rgba(0,0,0,.85);
+}
+
+.portfolio.dark {
+
+    background: rgba(255,255,255,.85);
+}
+
+.portfolio.alternate {
+
+    background: rgba(51, 41, 64 , .9);
+}
+
+.portfolio.light h2,
+.portfolio.alternate h2
+
+{
+
+    color: #fff;
+} 
+
+.portfolio.dark h2 {
+
+    color: #000;
+} 
+
+.portfolio ul li.sadness figure::before {
+
+    background-image: url('./sadnessLogo.svg');
+    background-color: #273c75;
+}
+
+.portfolio ul li.senzu figure::before {
+
+    background-image: url('./senzuLogo.png');
+    background-color: #2f4050;
+}
+
+.portfolio ul li.coffeee figure::before {
+
+    background-image: url('./CoffeeeLogo.svg');
+    background-color: rgba(20,2,0,1);
+}
+
+
+.portfolio ul li figure:hover::before {
+
+    transform: scale( 0 );
+}
+
+.portfolio ul li figure::before {
+
+    z-index: 5;
+    transition: .18s linear;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-size: 25% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.portfolio ul li figure {
+
+    width: 85%;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+.portfolio.dark ul li p a {
+
+    color: rgb( 45,45,45 );
+    font-style: italic;
+    letter-spacing: .2rem;
+}
+
+.portfolio.light ul li p a {
+
+    color: #fff;
+}
+
+.portfolio.alternate ul li p a {
+
+    color: #ea80fc;
+}
+
+.portfolio.dark ul li p a {
+
+    color: #000;
+}
+
+.portfolio blockquote {
+
+    text-align: center;
+}
+
+.portfolio ul li figure img:hover {
+
+    transform: scale( 1.15 );
+}
+
+.portfolio ul li figure img {
+
+    width: 100%;
+    height: auto;
+    transition: .5s linear all;
+}
+
+.portfolio h2 {
+
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) , (max-height: 500px) {
+
+    .portfolio ul li figure::before {
+
+        display: none;
+    }
+}

@@ -5,6 +5,7 @@ import Main from './../Main/Main' ;
 import {Theme} from './../Theme' ;
 import NavItems from './../NavItems/NavItems' ;
 import HowAreYou from './../HowAreYou/HowAreYou' ;
+import Portfolio from './../Portfolio/Portfolio';
 
 export default class Home extends React.Component {
 
@@ -23,6 +24,7 @@ export default class Home extends React.Component {
                         anchors={
                             [
                                 { path: "/#nav-items", name:"get started" } ,
+                                { path: "/#portfolio", name:"portfolio" } ,
                                 { path: "/#how-are-you", name:"qui sui-je ?" }
                             ]
                         }
@@ -33,6 +35,8 @@ export default class Home extends React.Component {
                         {/* navigable element banner */}
                         <NavItems />
 
+                        {/* Portfolio banner */}
+                        <Portfolio />
 
                         {/* component of present me */}
                         <HowAreYou />

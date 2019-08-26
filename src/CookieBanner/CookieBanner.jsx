@@ -82,7 +82,7 @@ export default class CookieBanner extends React.Component {
                         
                     <p>
                         Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre application.<br />
-                        <Link to="#">Cliquez ici</Link> pour plus d'informations.
+                        <Link data-tip="factory link" to="#">Cliquez ici</Link> pour plus d'informations.
                         
                     </p>
 
