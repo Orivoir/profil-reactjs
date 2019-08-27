@@ -15,7 +15,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 library.add( fas ) ;
 
-
 export default class CookieBanner extends React.Component {
     
     state = {

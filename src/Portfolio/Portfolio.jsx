@@ -3,6 +3,7 @@ import {Theme} from './../Theme';
 import sadnessScreen from './screenshot-sadness.png';
 import senzuScreen from './screenshot-senzus.png';
 import coffeeeScreen from './screenshot-coffeee.png';
+import todoScreen from './screenshot-todo.png';
 import './Portfolio.css';
 
 export default class Portfolio extends React.Component {
@@ -49,7 +50,7 @@ export default class Portfolio extends React.Component {
                         <a href="https://orivoir.github.io/reactjs-transition-page/#/">    
                             <figure>
                                 <img
-                                    alt="screenshot template sadness"
+                                    alt="screenshot template senzu"
                                     src={senzuScreen}
 
                                     // default size (px)
@@ -72,7 +73,7 @@ export default class Portfolio extends React.Component {
                         <figure>
                             <a href="https://orivoir.github.io/Coffeee/#/">
                                 <img
-                                    alt="screenshot template sadness"
+                                    alt="screenshot template Coffee Ipsum"
                                     src={coffeeeScreen}
 
                                     // default size (px)
@@ -88,6 +89,30 @@ export default class Portfolio extends React.Component {
                             </a>
                         </p>
                     </li>
+                    
+                    <li className="todo">
+                        <h2>Todo UI App</h2>
+                        {/* todoScreen */}
+                        <figure>
+                            <a href="https://orivoir.github.io/todo-react/#/">
+                                <img
+                                    alt="screenshot template todo"
+                                    src={todoScreen}
+
+                                    // default size (px)
+                                    width="500"
+                                    height="auto"
+                                />
+                            </a>
+                        </figure>
+                        
+                        <p>
+                            <a href="https://orivoir.github.io/todo-react/#/">
+                                Template Application theme Todo UI
+                            </a>
+                        </p>
+                    </li>
+
                 </ul>
 
             </section>
