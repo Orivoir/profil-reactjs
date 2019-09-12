@@ -4,6 +4,8 @@ import sadnessScreen from './screenshot-sadness.png';
 import senzuScreen from './screenshot-senzus.png';
 import coffeeeScreen from './screenshot-coffeee.png';
 import todoScreen from './screenshot-todo.png';
+import rookScreen from './screenshot-rookjs.png';
+import commplateScreen from './screenshot-commplate.png';
 import './Portfolio.css';
 
 export default class Portfolio extends React.Component {
@@ -16,7 +18,7 @@ export default class Portfolio extends React.Component {
             <section id="portfolio" className={`portfolio ${this.context.theme}`}>
 
                 <h2>Portfolio</h2>
-                <blockquote>Template & UI deployé avec git-pages</blockquote>
+                <blockquote>Template , UI & librairie javascript deployé avec git-pages</blockquote>
                 
                 <ul>
                     <li className="sadness">
@@ -109,6 +111,53 @@ export default class Portfolio extends React.Component {
                         <p>
                             <a href="https://orivoir.github.io/todo-react/#/">
                                 Template Application theme Todo UI
+                            </a>
+                        </p>
+                    </li>
+
+                    
+                    <li className="rook">
+                        <h2>Rookjs library javascript DOM events</h2>
+                        {/* todoScreen */}
+                        <figure>
+                            <a href="https://github.com/Orivoir/rookjs/blob/master/rookjs/rook.js">
+                                <img
+                                    alt="screenshot template todo"
+                                    src={rookScreen}
+
+                                    // default size (px)
+                                    width="500"
+                                    height="auto"
+                                />
+                            </a>
+                        </figure>
+                        
+                        <p>
+                            <a href="https://github.com/Orivoir/rookjs/blob/master/rookjs/rook.js">
+                                Library JavaScript Events easy use , DOM easy selector , Node easy change with {"<3"} syntax<br />
+                            </a>
+                        </p>
+                    </li>
+                    
+                    <li className="commplate">
+                        <h2>Commplate library javascript pseudo-template expresionnal eval client side</h2>
+                        {/* todoScreen */}
+                        <figure>
+                            <a href="https://github.com/Orivoir/commplate/blob/master/commplate/commplate.js">
+                                <img
+                                    alt="screenshot template todo"
+                                    src={commplateScreen}
+
+                                    // default size (px)
+                                    width="500"
+                                    height="auto"
+                                />
+                            </a>
+                        </figure>
+                        
+                        <p>
+                            <a href="https://github.com/Orivoir/commplate/blob/master/commplate/commplate.js">
+                                Library JavaScript @@render::your life<br />
                             </a>
                         </p>
                     </li>

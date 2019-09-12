@@ -128,8 +128,9 @@ function checkValidServiceWorker(swUrl, config) {
 
 export function unregister() {
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.ready.then(registration => {
-      registration.unregister();
-    });
+    // SecurityError
+    // navigator.serviceWorker.ready.then(registration => {
+    //   registration.unregister();
+    // });
   }
 }
