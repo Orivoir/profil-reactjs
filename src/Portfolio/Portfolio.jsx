@@ -6,6 +6,7 @@ import coffeeeScreen from './screenshot-coffeee.png';
 import todoScreen from './screenshot-todo.png';
 import rookScreen from './screenshot-rookjs.png';
 import commplateScreen from './screenshot-commplate.png';
+import rankScreen from './screenshot-rank.png';
 import './Portfolio.css';
 
 export default class Portfolio extends React.Component {
@@ -158,6 +159,29 @@ export default class Portfolio extends React.Component {
                         <p>
                             <a href="https://github.com/Orivoir/commplate/blob/master/commplate/commplate.js">
                                 Library JavaScript @@render::your life<br />
+                            </a>
+                        </p>
+                    </li>
+                 
+                    <li className="rank">
+                        <h2>fluid-rank-stars library javascript générateur de systéme de note par étoile UI avec précision 7 décimales</h2>
+                        {/* todoScreen */}
+                        <figure>
+                            <a href="https://github.com/Orivoir/fluid-rank-stars/blob/master/fluid-rank-stars/script.js">
+                                <img
+                                    alt="screenshot template todo"
+                                    src={rankScreen}
+
+                                    // default size (px)
+                                    width="500"
+                                    height="auto"
+                                />
+                            </a>
+                        </figure>
+                        
+                        <p>
+                            <a href="https://github.com/Orivoir/fluid-rank-stars/blob/master/fluid-rank-stars/script.js">
+                            This is an micro-library JavaScript && CSS3 define and custom your rank system thinks only finally onValid logic {"</>"}
                             </a>
                         </p>
                     </li>
