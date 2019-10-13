@@ -78,14 +78,13 @@
     background-size: cover;
 }
 
+.portfolio ul li.movies figure::before {
 
-
-
-.portfolio ul li figure:hover::before {
-
-    transform: scale( 0 );
+    background-color: rgb( 232,232,232);
+    background-image: url('./movies.png');
+    background-size: 33% auto;
+    background-position: center center; 
 }
-
 .portfolio ul li figure::before {
 
     z-index: 5;
@@ -101,7 +100,10 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
+.portfolio ul li figure:hover::before {
 
+    transform: scale( 0 );
+}
 .portfolio ul li.rook figure::before {
     
     background-size: 100% 100%;
