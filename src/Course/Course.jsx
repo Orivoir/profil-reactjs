@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './../Header/Header' ;
 import DocumentTitle from 'react-document-title' ;
 import Main from './../Main/Main' ;
-import Ytb from './../Ytb/Ytb';
+// import Ytb from './../Ytb/Ytb';
 import Kinogi from './../Kinogi/Kinogi';
 
 import {Theme} from './../Theme' ;
@@ -29,12 +29,14 @@ export default class Course extends React.Component {
                         }
                         route="/course"
                     >
-
+                        {/*
+                        vidéo où compte YTB supprimmé 
                         <Ytb
                             id="get-started"
                             src="https://www.youtube.com/embed/SntWoxaM5S0"
                             title="Hackathon <WebForce3 /> Bourgogne 03/06/18"
                         />
+                        */}
 
                         <Kinogi />
                         

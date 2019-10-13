@@ -85,6 +85,14 @@
     background-size: 33% auto;
     background-position: center center; 
 }
+
+.portfolio ul li.asia figure::before {
+
+    background-color: #863a36;
+    background-image: url('https://image.flaticon.com/icons/svg/2075/2075883.svg');
+    background-size: 33% auto;
+    background-position: center center;
+}
 .portfolio ul li figure::before {
 
     z-index: 5;
