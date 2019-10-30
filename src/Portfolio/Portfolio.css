@@ -86,6 +86,14 @@
     background-position: center center; 
 }
 
+.portfolio ul li.picsy figure::before {
+
+    background-color: rgb( 232,232,232);
+    background-image: url('https://image.flaticon.com/icons/png/512/148/148717.png');
+    background-size: 33% auto;
+    background-position: center center; 
+}
+
 .portfolio ul li.asia figure::before {
 
     background-color: #863a36;

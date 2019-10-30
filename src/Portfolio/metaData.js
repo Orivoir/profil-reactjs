@@ -7,6 +7,7 @@ import commplateScreen from './screenshot-commplate.png';
 import rankScreen from './screenshot-rank.png';
 import moviesScreen from './screenshot-movies.png';
 import asiaScreen from './screenshot-asia.png';
+import picsyScreen from './screenshot-picsy.png';
 
 const metaData = [
     {
@@ -16,6 +17,14 @@ const metaData = [
         ,img:sadnessScreen
         ,describe:"Template / Application theme e-commerce UI"
         ,cls:"sadness"
+    }
+    ,{
+        id: 10
+        ,title: 'Picsy'
+        ,target:"https://orivoir.github.io/picsy/#/"
+        ,img:picsyScreen
+        ,describe:"Picsy et une application de gestion d'images , Template UI/UX responsive"
+        ,cls:"picsy"
     }
     ,{
         id: 1
@@ -77,7 +86,7 @@ const metaData = [
     ,{
         id: 7
         ,title: 'fluid-rank-stars library javascript générateur de systéme de note par étoile UI avec précision 7 décimales'
-        ,target:"https://github.com/Orivoir/fluid-rank-stars/blob/master/fluid-rank-stars/script.js"
+        ,target:"https://github.com/Orivoir/fluid-rank-stars"
         ,img:rankScreen
         ,describe:"This is an micro-library JavaScript && CSS3 define and custom your rank system thinks only finally onValid logic </>"
         ,cls:"rank"
