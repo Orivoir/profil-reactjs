@@ -6,7 +6,7 @@ import CookieBanner from './../CookieBanner/CookieBanner' ;
 import Footer from './../Footer/Footer' ;
 import {HashLink as Link} from 'react-router-hash-link';
 /**
-* git expemples repository :  
+* git expemples repository :
 * <https://github.com/FortAwesome/react-fontawesome/blob/master/examples/create-react-app/src/App.js#L63>
 * Font icons (svg) react lib
 */
@@ -17,7 +17,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add( fas ) ;
 
 export default class Main extends React.Component {
-    
+
     static contextType = Theme ;
 
     state = {
@@ -29,28 +29,28 @@ export default class Main extends React.Component {
 
         super( props ) ;
         this.onChangeReversed = this.onChangeReversed.bind( this ) ;
-        this.scrollAction = this.scrollAction.bind( this ) ; 
+        this.scrollAction = this.scrollAction.bind( this ) ;
     }
 
     /**
      * @bindMethod [constructor]
-     * @param {SyntheticEvent} e 
+     * @param {SyntheticEvent} e
      */
     onChangeReversed( e ) {
 
         e.preventDefault() ;
 
         this.setState( state => (
-        
+
             { left: !state.left }
-        
+
         ) ) ;
     }
 
-    
+
     /**
      * @bindMethod [constructor]
-     * @param {Event} e 
+     * @param {Event} e
      */
     scrollAction( {pageY} ) {
 
@@ -59,7 +59,7 @@ export default class Main extends React.Component {
         if( !toTop || !(toTop instanceof Node) ) return ;
 
         toTop
-            .classList[ 
+            .classList[
                 ( pageY >= 100  ? 'remove' : 'add')
             ] ('hide-o')
         ;
@@ -71,11 +71,11 @@ export default class Main extends React.Component {
         const useCookie = sessionStorage.getItem('useCookie') ;
 
         if( !useCookie ) {
-            this.setState( { 
+            this.setState( {
                 cookieBanner: <CookieBanner />
             } ) ;
         }
-        
+
         window.addEventListener('scroll' , this.scrollAction ) ;
     }
 
@@ -100,7 +100,7 @@ export default class Main extends React.Component {
                         </div>
                     </section>
 
-                    
+
                     <Tablebar
                         status={!this.state.left}
                         anchors={anchors}
@@ -109,10 +109,10 @@ export default class Main extends React.Component {
 
                     <div className="wrap-to-top hide-o">
 
-                        
-                        <Link 
+
+                        <Link
                             to={ this.props.route + '#header' }
-                        >  
+                        >
                             <FontAwesomeIcon
                                 icon={['fas','arrow-alt-circle-up']}
                                 size='2x'

@@ -5,7 +5,7 @@ import githubImg from './git-github.png'
 import './ToolsDev.css' ;
 
 export default class ToolsDev extends React.Component {
-    
+
     static contextType = Theme ;
 
     state = {
@@ -24,10 +24,10 @@ export default class ToolsDev extends React.Component {
         this.currentMove = this.currentMove.bind( this ) ;
     }
 
-    
+
     /**
      * @bindMethod [constructor]
-     * @param {SyntheticEvent} e 
+     * @param {SyntheticEvent} e
      */
     currentUp( e ) {
 
@@ -39,9 +39,9 @@ export default class ToolsDev extends React.Component {
 
         if( this.state.position > 55 || this.state.position < -55 ) {
 
-            
+
             const newSection = document.querySelector('#tools-dev section[data-current="false"]') ;
-            
+
             section.setAttribute( 'data-current' , 'false' ) ;
             newSection.setAttribute( 'data-current' , 'true' ) ;
 
@@ -53,13 +53,13 @@ export default class ToolsDev extends React.Component {
             newSection.addEventListener('mousedown' , this.currentDown ) ;
         }
 
-        
+
         this.setState( { down: false , position: false } ) ;
     }
-    
+
     /**
      * @bindMethod [constructor]
-     * @param {SyntheticEvent} e 
+     * @param {SyntheticEvent} e
      */
     currentMove( e ) {
 
@@ -67,7 +67,7 @@ export default class ToolsDev extends React.Component {
 
         if( down ) {
 
-            
+
             const
                 section = document.querySelector('#tools-dev section[data-current="true"]') ;
             ;
@@ -79,7 +79,7 @@ export default class ToolsDev extends React.Component {
                 section.style.opacity = '.5' ;
                 return ;
             } else {
-                
+
                 section.style.opacity = '1' ;
             }
 
@@ -93,7 +93,7 @@ export default class ToolsDev extends React.Component {
 
     /**
      * @bindMethod [constructor]
-     * @param {SyntheticEvent} e 
+     * @param {SyntheticEvent} e
      */
     currentDown(e) {
 
@@ -161,7 +161,7 @@ export default class ToolsDev extends React.Component {
                             cette&nbsp;
                             <span data-tip="application de profil">homepage</span>&nbsp;
                             et développé avec le&nbsp;
-                            <a 
+                            <a
                                 href="https://fr.reactjs.org/docs/create-a-new-react-app.html#___gatsby"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -191,12 +191,12 @@ export default class ToolsDev extends React.Component {
                                 git/github
                             </a>
 
-                        </p>    
+                        </p>
                     </div>
                 </section>
-                
+
                 <section data-current="false" className="reversed tools-dev git hide" id="git">
-            
+
                     <aside>
                         <figcaption></figcaption>
                         <img
@@ -226,7 +226,7 @@ export default class ToolsDev extends React.Component {
                             cette&nbsp;
                             <span data-tip="application de profil">homepage</span>&nbsp;
                             et développé avec le&nbsp;
-                            <a 
+                            <a
                                 href="https://fr.reactjs.org/docs/create-a-new-react-app.html#___gatsby"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -256,7 +256,7 @@ export default class ToolsDev extends React.Component {
                                 git/github
                             </a>
 
-                        </p>    
+                        </p>
                     </div>
 
                 </section>

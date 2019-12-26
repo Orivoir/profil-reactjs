@@ -2,7 +2,7 @@ import React from 'react' ;
 import './Footer.css' ;
 
 /**
-* git expemples repository :  
+* git expemples repository :
 * <https://github.com/FortAwesome/react-fontawesome/blob/master/examples/create-react-app/src/App.js#L63>
 * Font icons (svg) react lib
 */
@@ -14,7 +14,7 @@ import ReactTooltip from 'react-tooltip' ;
 library.add( fab ) ;
 
 export default class Footer extends React.Component {
-    
+
     render() {
 
         return(
@@ -22,7 +22,7 @@ export default class Footer extends React.Component {
 
                 <ul>
                     <li>
-                        <a 
+                        <a
                             data-tip="contribuer au projet open source ?"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export default class Footer extends React.Component {
                     <li>
                         Liscence&nbsp;
                         <a href="https://www.gnu.org/licenses/lgpl-3.0.txt">GNU/GPL</a>
-                        - {new Date().getFullYear()} des gens biens 
+                        - {new Date().getFullYear()} des gens biens
                     </li>
 
                 </ul>

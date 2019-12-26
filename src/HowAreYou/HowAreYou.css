@@ -17,7 +17,7 @@
 }
 
 #how-are-you.dark {
-    
+
     background: rgba( 255,255,255 , .75 );
 }
 #how-are-you.dark p a {
@@ -26,7 +26,7 @@
 }
 
 #how-are-you.light {
-    
+
     color: #fff;
     background: rgba( 0,0,0 , .75 );
 }
@@ -36,7 +36,7 @@
 }
 
 #how-are-you.alternate {
-    
+
     color: #fff;
     background: rgba(51, 41, 64 , .9);
 }

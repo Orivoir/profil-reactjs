@@ -6,7 +6,7 @@ import { routes } from './routes' ;
 import ReactToolTip from 'react-tooltip' ;
 
 export default class App extends React.Component {
-  
+
   state = {
     theme: ( typeof sessionStorage.getItem('theme') === "string"  && /(light|dark|alternate)/.test(sessionStorage.getItem('theme')) ) ? sessionStorage.getItem('theme'): themes.light ,
     tip: themes.dark
@@ -22,9 +22,9 @@ export default class App extends React.Component {
       this.setState({ theme: change } ) ;
 
       this.setState( state => ( {
-      
-        tip: state.theme !== 'alternate' ? (state.theme === 'light' ? 'dark' : 'light' ) : 'success' 
-      
+
+        tip: state.theme !== 'alternate' ? (state.theme === 'light' ? 'dark' : 'light' ) : 'success'
+
       } ) ) ;
 
       sessionStorage.setItem('theme' , change ) ;
@@ -37,7 +37,7 @@ export default class App extends React.Component {
     return (
       <Theme.Provider value={this.state} >
           <Switch>
-            
+
             {/* Dynamic define routes */}
             {
               routes.map( (route,key) => (

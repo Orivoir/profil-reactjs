@@ -6,7 +6,7 @@ import reactImg from './reactjs.png' ;
 import wf3Course from './wf3-course.jpg';
 
 /**
-* git expemples repository :  
+* git expemples repository :
 * <https://github.com/FortAwesome/react-fontawesome/blob/master/examples/create-react-app/src/App.js#L63>
 * Font icons (svg) react lib
 */
@@ -18,7 +18,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add( fab , fas ) ;
 
 export default class NavItems extends React.Component {
-  
+
     static contextType = Theme ;
 
     render() {
@@ -32,7 +32,7 @@ export default class NavItems extends React.Component {
             >
                 <ul>
                     <li className="nav-item hackathon">
-                      
+
                         <section className="banner-nav-item hackathon">
 
                             <div className="title-banner">
@@ -75,37 +75,37 @@ export default class NavItems extends React.Component {
                                                 lire plus
                                             </a>
                                         </p>
-                                        
+
                                     </figcaption>
 
                                 </figure>
 
-                            </aside>                
+                            </aside>
 
                         </section>
 
                     </li>
-                    
+
                     <li className="nav-item tools-web-dev">
-                        
+
                         <section className="banner-nav-item tools-web-dev">
-                            
+
                             <div className="title-banner">
                                 <Link to="/future">
                                     <h2>Outils de Developement</h2>
                                     <blockquote>Git &amp; ReactJS</blockquote>
                                 </Link>
                             </div>
-                            
+
                             <aside>
                                 <figure>
-                                    <img 
+                                    <img
                                           src={reactImg}
 
                                           // default size ( px )
                                           width="250"
                                           height="auto"
-  
+
                                           alt="reactjs logo"
                                     />
                                     <figcaption>
@@ -126,9 +126,9 @@ export default class NavItems extends React.Component {
                         </section>
 
                     </li>
-                    
+
                     <li className="nav-item wf3">
-                    
+
                         <section className="banner-nav-item wf3">
 
                             <div className="title-banner">
@@ -137,7 +137,7 @@ export default class NavItems extends React.Component {
                                     <blockquote>parcours &amp; rècit</blockquote>
                                 </Link>
                             </div>
-                            
+
 
                             <aside>
                                 <figure>
@@ -150,7 +150,7 @@ export default class NavItems extends React.Component {
                                         alt="webforce 3 course web"
                                     />
 
-                                    
+
                                     <figcaption>
                                         <p>
                                             <Link to="/future">

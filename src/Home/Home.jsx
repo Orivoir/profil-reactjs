@@ -15,7 +15,7 @@ export default class Home extends React.Component {
 
         return (
             <DocumentTitle title="home">
-                
+
                 <>
                     <Header />
 
@@ -29,7 +29,7 @@ export default class Home extends React.Component {
                             ]
                         }
                     >
-                    
+
                         {/* Write home content here */}
 
                         {/* navigable element banner */}

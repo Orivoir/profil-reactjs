@@ -2,7 +2,7 @@ import React from 'react';
 import {Theme} from './../Theme';
 import './HowAreYou.css' ;
 /**
-* git expemples repository :  
+* git expemples repository :
 * <https://github.com/FortAwesome/react-fontawesome/blob/master/examples/create-react-app/src/App.js#L63>
 * Font icons (svg) react lib
 */
@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add( fab , fas ) ;
 
 export default class HowAreYou extends React.Component {
-    
+
     static contextType = Theme ;
 
     render() {
@@ -44,11 +44,11 @@ export default class HowAreYou extends React.Component {
                         &nbsp;
                         junior
                     </b>&nbsp;
-                    en expension continue<br />
+                    en expansion continue<br />
                     passionné du web et de ses technologies curieux
                     d'apprendre et de transmettre<br />
                     par le biais des sites/applications
-                    en libre accés éparpillé sur la&nbsp;
+                    en libre accès éparpillé sur la&nbsp;
                     <span data-tip="le web">toile</span><br />
                     je débute mon parcours sur&nbsp;
                     <a href="https://openclassrooms.com">
@@ -57,9 +57,9 @@ export default class HowAreYou extends React.Component {
                     à qui je remercie ça productivité de cours en ligne massif
                     en libre accès , <br />
                     j'expérimente certains concept grace au documentation
-                    du web notament grâce à&nbsp;
+                    du web notamment grâce à&nbsp;
                     <a href="https://www.mozilla.org/fr/">
-                        Mozilla Developpement Network
+                        Mozilla Development Network
                     </a>&nbsp;
                     puis j'intégre la formation intensif de&nbsp;
                     <a href="https://wf3.fr">
@@ -67,7 +67,7 @@ export default class HowAreYou extends React.Component {
                     </a>&nbsp;
                     session 12 Mars - 12 Juillet ,<br />
                     où je découvre nombreuse technologie bonne pratique , outils divers<br />
-                    dont <a 
+                    dont <a
                         href="https://github.com/Orivoir/"
                         data-tip="lien externe vers mon profil github"
                     >
@@ -79,7 +79,7 @@ export default class HowAreYou extends React.Component {
                     </a>&nbsp;
                     je décroche mes certifications de développement/intégrations web<br />
                     à l'issue de cette formation intensive où depuis je continue de<br />
-                    m'auto formé en développeur "nomade" , sur le libre accés du web par passion &amp; curiosité .
+                    m'auto formé en développeur "nomade" , sur le libre accès du web par passion &amp; curiosité .
                 </p>
 
                 <p>
@@ -87,7 +87,7 @@ export default class HowAreYou extends React.Component {
                 </p>
 
 
-            </section>    
+            </section>
         ) ;
     }
 };

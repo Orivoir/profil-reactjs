@@ -1,0 +1,60 @@
+.package-header.dark h1 {
+
+    color: rgb(200,200,200);
+}
+
+.package-header.dark h2 {
+
+    color: rgb(200,200,200);
+}
+
+.package-header.alternate h1 {
+
+    color: rgb(200,200,200);
+}
+
+.package-header.alternate h2 {
+
+    color: rgb(200,200,200);
+}
+
+.packages-list section {
+
+    margin: 4vh 0;
+    padding: 4vh;
+}
+
+.packages-list.light a {
+
+    color: #30336b;
+}
+
+.packages-list.alternate a {
+
+    color: #fff;
+    text-decoration: underline;
+}
+
+.packages-list.dark section {
+
+    background: rgba( 42,42,42 , .85 );
+    color: rgb(200,200,200);
+}
+
+.packages-list.light section {
+
+    background: rgba( 200,200,200 , .85 );
+    color: rgb(42,42,42);
+}
+
+.packages-list.alternate section {
+
+    background: #332940;
+    color: rgb(200,200,200);
+}
+
+.packages-list.dark a {
+
+    color: rgb( 140,140,140 );
+    text-decoration: underline;
+}
